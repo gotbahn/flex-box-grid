@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"../../src/styles/flexgrid.scss"
+	],
+	"sourcesContent": [],
+	"mappings": "ACAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAK,GADV;;ADQN,IAAI,CAAC;EACD,KAAK,EAHM,OAAO,GAEhB",
+	"names": []
+}

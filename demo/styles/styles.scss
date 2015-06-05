@@ -1,0 +1,11 @@
+//
+//  Flexgrid demo
+//  ---------------------------------------------
+
+@import '../../src/styles/flexgrid';
+
+$color-purple: #9d66c7;
+
+.foo {
+    color: $color-purple;
+}

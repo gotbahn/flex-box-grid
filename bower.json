@@ -1,0 +1,25 @@
+{
+  "name": "flexgrid",
+  "version": "0.0.1",
+  "main": "dist/css/flexgrid.min.css",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "demo",
+    "src",
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".jscsrc",
+    ".jshintrc",
+    "favicon.ico",
+    "Gruntfile.js",
+    "LICENSE.txt",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "normalize.css": "~3.0.3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "flexgrid",
+  "version": "0.0.1",
+  "main": "dist/css/flexgrid.min.css",
+  "description": "Grid system with flexible boxes",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/godban/flexgrid.git"
+  },
+  "keywords": [
+    "Grid",
+    "Flex",
+    "Flexbox",
+    "Flex grid",
+    "Responsive"
+  ],
+  "author": "Bogdan Plieshka",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-exec": "^0.4.6",
+    "grunt-sass": "^1.0.0",
+    "grunt-version": "^0.3.0",
+    "load-grunt-tasks": "^3.2.0",
+    "time-grunt": "^1.2.1"
+  }
+}
