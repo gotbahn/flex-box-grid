@@ -1,3 +1,7 @@
-.foo {
-    color: #000;
-}
+//
+//  Flexbox Grid System
+//  _____________________________________________
+
+@import '_variables.scss';
+@import '_utilities.scss';
+@import '_grid.scss';
