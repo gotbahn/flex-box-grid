@@ -1,15 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>flexgrid</title>
+    <title>FlexGrid</title>
     <link rel="stylesheet" href="./bower_components/normalize.css/normalize.css"/>
     <link rel="stylesheet" href="./demo/styles/styles.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <link href="./favicon.ico" rel="icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <main class="main">
+    <div class="container">
 
+        <h1 class="page-title"><span class="accent-text">Flex</span>Grid</h1>
+        <p class="page-description">
+            Create clean, simple and powerful multi-device grid layouts via <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes" target="_blank">Flexible Boxes</a>. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.
+        </p>
+
+        <h2>Basic</h2>
+
+        <p>
+            FlexGrid systems are used for creating page layouts through a series of rows and columns that house your content.
+            <br/>
+            By default FlexGrid have 12 columns.
+        </p>
+
+        <section class="section-example">
+            <div class="row">
+                <!--.M1*12>.col-content-example{.M1}-->
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+                <div class="M1">
+                    <div class="col-content-example">.M1</div>
+                </div>
+            </div>
+            <div class="row">
+                <!--(.M8>.col-content-example{.M8})+.M4>.col-content-example{.M4}-->
+                <div class="M8">
+                    <div class="col-content-example">.M8</div>
+                </div>
+                <div class="M4">
+                    <div class="col-content-example">.M4</div>
+                </div>
+            </div>
+            <div class="row">
+                <!--.M6*2>.col-content-example{.M6}-->
+                <div class="M6">
+                    <div class="col-content-example">.M6</div>
+                </div>
+                <div class="M6">
+                    <div class="col-content-example">.M6</div>
+                </div>
+            </div>
+            <div class="row">
+                <!--.M4*3>.col-content-example{.M4}-->
+                <div class="M4">
+                    <div class="col-content-example">.M4</div>
+                </div>
+                <div class="M4">
+                    <div class="col-content-example">.M4</div>
+                </div>
+                <div class="M4">
+                    <div class="col-content-example">.M4</div>
+                </div>
+            </div>
+        </section>
+
+        <ul>
+            <li>
+                Rows must be placed within a <code class="line-sass-class">.container</code> whith predefined paddings that equal half column gutter.
+            </li>
+            <li>
+                Use rows <code class="line-sass-class">.row</code> to create horizontal groups of columns.
+            </li>
+            <li>
+                Content should be placed within columns with classes <code class="line-sass-class">.XS-n, .S-n, .M-n, .L-n, .XL-n</code> where <code class="line-sass-class">n</code> is columns number from 1 to 12 (by default).
+            </li>
+            <li>
+                Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code class="line-sass-class">.row</code>, by default it's 10px.
+            </li>
+        </ul>
+
+        <p class="code-block-description">HTML syntax is completely simple:</p>
+
+<pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M1">...&lt;/div> * 12
+        &lt;div class="M8">...&lt;/div>&lt;div class="M4">...&lt;/div>
+        &lt;div class="M6">...&lt;/div>&lt;div class="M6">...&lt;/div>
+        &lt;div class="M4">...&lt;/div> * 3
+    &lt;/div>
+&lt;/div>
+</code></pre>
+
+        <h2>FAQ</h2>
+
+        <dl>
+            <dt>What is Grid?</dt>
+            <dd>
+                The vast majority of websites out there use a grid. They may not explicitly have a grid system in place, but if they have a "main content area" floated to the left a "sidebar" floated to the right, it's a simple grid.
+            </dd>
+            <dt>
+                Why use Grid at all?
+            </dt>
+            <dd>
+                Using grid system can significant speed up your work, keep you code understandable and DRY.
+            </dd>
+        </dl>
+
+
+    </div>
 </main>
+<script src="demo/scripts/prism.js"></script>
 </body>
 </html>

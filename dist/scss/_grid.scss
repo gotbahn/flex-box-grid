@@ -1,3 +1,5 @@
+// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 07-06-2015
+
 //
 //  Grid
 //  _____________________________________________
@@ -27,27 +29,34 @@
 //  Columns XS
 //  ---------------------------------------------
 
-@include create-grid-columns(XS);
+@include create-grid-columns($name__XS);
 
 //  Columns S
 //  ---------------------------------------------
 
-@media (max-width: $screen__S) {
-    @include create-grid-columns(S);
+@media (min-width: $screen__S) {
+    @include create-grid-columns($name__S);
 }
 
 //  Columns M
 //  ---------------------------------------------
 
-@media (max-width: $screen__M) {
-    @include create-grid-columns(M);
+@media (min-width: $screen__M) {
+    @include create-grid-columns($name__M);
 }
 
 //  Columns L
 //  ---------------------------------------------
 
-@media (max-width: $screen__L) {
-    @include create-grid-columns(L);
+@media (min-width: $screen__L) {
+    @include create-grid-columns($name__L);
+}
+
+//  Columns XL
+//  ---------------------------------------------
+
+@media (min-width: $screen__XL) {
+    @include create-grid-columns($name__XL);
 }
 
 //  Additional

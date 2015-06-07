@@ -8,19 +8,50 @@ module.exports = function (grunt) {
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
 
-    var version = 'patch';
+    var version = 'patch',
+        path = {
+            src: {
+                styles: 'src/styles/'
+            },
+            dist: {
+                css: 'dist/css/',
+                scss: 'dist/scss/'
+            },
+            demo: {
+                styles: 'demo/styles/',
+                scripts: 'demo/scripts/'
+            }
+        };
 
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
+        path: path,
+        bannerCSS: '/*! <%= pkg.name %> - Flexible Boxes Grid System by <%= pkg.author %>, <%= grunt.template.today("dd-mm-yyyy") %> */\n',
+        bannerSCSS: '// <%= pkg.name %> - Flexible Boxes Grid System by <%= pkg.author %>, <%= grunt.template.today("dd-mm-yyyy") %>\n',
 
-        uglify: {
+        usebanner: {
             options: {
-                banner: '/*! <%= pkg.name %> by <%= pkg.author %>, <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+                position: 'top'
             },
-            dist: {
+            css: {
+                options: {
+                    banner: '<%= bannerCSS %>'
+                },
                 files: {
-                    'dist/<%= pkg.name %>.css': ['dist/<%= pkg.name %>.css']
+                    src: [
+                        path.dist.css + '**/*.css'
+                    ]
+                }
+            },
+            scss: {
+                options: {
+                    banner: '<%= bannerSCSS %>'
+                },
+                files: {
+                    src: [
+                        path.dist.scss + '**/*.scss'
+                    ]
                 }
             }
         },
@@ -44,16 +75,35 @@ module.exports = function (grunt) {
         copy: {
             scss: {
                 expand: true,
-                cwd: 'src/styles/',
+                cwd: path.src.styles,
                 src: '**',
-                dest: 'dist/scss/'
+                dest: path.dist.scss
+            }
+        },
+
+        cssmin: {
+            options: {
+                'report': 'gzip',
+                'keepSpecialComments': 0
+            },
+            flexgrid: {
+                files: [{
+                    expand: true,
+                    cwd: path.dist.css,
+                    src: [
+                        '*.css',
+                        '!*.min.css'
+                    ],
+                    dest: path.dist.css,
+                    ext: '.min.css'
+                }]
             }
         },
 
         sass: {
             flexgrid: {
                 files: {
-                    'dist/css/flexgrid.css': 'src/styles/flexgrid.scss'
+                    '<%= path.dist.css %>flexgrid.css': path.src.styles + 'flexgrid.scss'
                 }
             },
             demo: {
@@ -61,12 +111,15 @@ module.exports = function (grunt) {
                     sourceMap: true
                 },
                 files: {
-                    'demo/styles/styles.css': 'demo/styles/styles.scss'
+                    '<%= path.demo.styles %>styles.css': path.demo.styles + 'styles.scss'
                 }
             }
         },
 
         watch: {
+            options: {
+                livereload: true
+            },
             files: ['**/*.scss'],
             tasks: ['sass']
         }
@@ -76,8 +129,9 @@ module.exports = function (grunt) {
     grunt.registerTask('build', function () {
         grunt.task.run([
             'sass',
-            'uglify',
+            'cssmin',
             'copy',
+            'usebanner',
             'version'
         ]);
         if (version !== 'patch') {

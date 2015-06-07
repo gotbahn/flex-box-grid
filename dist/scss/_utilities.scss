@@ -1,3 +1,5 @@
+// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 07-06-2015
+
 //
 //  Utilities -> Grid
 //  _____________________________________________
@@ -5,7 +7,7 @@
 @mixin grid-column(
     $_gutter: $grid__gutter
 ) {
-    flex: 0 0 auto;
+    flex: 0 0 100%;
     max-width: 100%;
     // Prevent columns from collapsing when empty
     min-height: 1px;
@@ -116,10 +118,10 @@
 
 @mixin create-all-grid-columns(
     $i: 1,
-    $list: '.XS-#{$i}, .S-#{$i}, .M-#{$i}, .L-#{$i}'
+    $list: '.#{$name__XS}#{$i}, .#{$name__S}#{$i}, .#{$name__M}#{$i}, .#{$name__L}#{$i}, .#{$name__XL}#{$i}'
 ) {
     @for $i from (1 + 1) through $grid__columns {
-        $list: '#{$list}, .XS-#{$i}, .S-#{$i}, .M-#{$i}, .L-#{$i}';
+        $list: '#{$list}, .#{$name__XS}#{$i}, .#{$name__S}#{$i}, .#{$name__M}#{$i}, .#{$name__L}#{$i}, .#{$name__XL}#{$i}';
     }
     #{$list} {
         @include grid-column();
@@ -132,13 +134,13 @@
     $type
 ) {
     @if ($type == width) and ($index > 0) {
-        .#{$class}-#{$index} {
+        .#{$class}#{$index} {
             flex-basis: percentage(($index / $grid__columns));
             max-width: percentage(($index / $grid__columns));
         }
     }
     @if ($type == off) {
-        .#{$class}-off-#{$index} {
+        .#{$class}#{$index}-off {
             margin-left: percentage(($index / $grid__columns));
         }
     }

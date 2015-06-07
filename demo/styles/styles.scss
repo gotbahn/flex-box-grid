@@ -1,7 +1,134 @@
 //
 //  Flexgrid demo
 //  ---------------------------------------------
-
 @import '../../src/styles/flexgrid';
+@import '_prism.scss';
 
-$color-purple: #9d66c7;
+$color__purple: #9d66c7;
+$col__background-color: $color__purple;
+$col__color: #fff;
+$col__height: 30px;
+
+$col-example__indent: $grid__gutter;
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+pre[class*='language-'] {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 2em;
+    padding: 0;
+    li {
+        display: block;
+        margin-bottom: .5em;
+        &:before {
+            content: '\2014';
+            margin-right: .5em;
+        }
+    }
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    font-weight: 600;
+    display: block;
+    margin-bottom: .25em;
+}
+
+dd {
+    margin: 0 0 1em;
+    display: block;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+a {
+    color: #4cbef4;
+    &:hover {
+        color: darken(#4cbef4, 5%);
+    }
+}
+
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: $col__height;
+}
+
+.page-title {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: .25em;
+    font-size: 3em;
+    .accent-text {
+        color: $color__purple;
+    }
+}
+
+.page-description {
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom: 1px dashed;
+    padding-bottom: 1.5em;
+}
+
+.section-example {
+    margin-bottom: 1.5em;
+}
+
+.col-content-example {
+    background-color: $col__background-color;
+    color: $col__color;
+    margin-bottom: $col-example__indent;
+    padding: $col-example__indent - 1px $col-example__indent $col-example__indent + 1px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: $col-example__indent + 1px;
+    font-weight: 300;
+}
+
+.line-sass-class {
+    color: #07a;
+    margin-right: .25em;
+    margin-left: .25em;
+}
+
+.code-block-description {
+    font-size: 13px;
+    margin-bottom: .5em;
+}
