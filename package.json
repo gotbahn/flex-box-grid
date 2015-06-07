@@ -1,12 +1,6 @@
 {
   "name": "FlexGrid",
-  "version": "0.1.0",
-  "main": "dist/css/flexgrid.min.css",
-  "description": "Grid system with flexible boxes",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/godban/flexgrid.git"
-  },
+  "description": "Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.",
   "keywords": [
     "Grid",
     "Flex",
@@ -14,8 +8,19 @@
     "Flex grid",
     "Responsive"
   ],
-  "author": "Bogdan Plieshka",
+  "homepage": "http://godban.com.ua/projects/flexgrid",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/godban/flexgrid.git"
+  },
+  "main": "dist/css/flexgrid.min.css",
   "license": "MIT",
+  "author": {
+    "name": "Bogdan Plieshka",
+    "email": "bogdanplieshka@gmail.com",
+    "homepage": "http://johndoe.com"
+  },
   "readmeFilename": "README.md",
   "dependencies": {},
   "devDependencies": {

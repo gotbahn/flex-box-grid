@@ -1,7 +1,26 @@
 {
-  "name": "flexgrid",
-  "version": "0.1.0",
+  "name": "FlexGrid",
+  "description": "Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.",
+  "keywords": [
+    "Grid",
+    "Flex",
+    "Flexbox",
+    "Flex grid",
+    "Responsive"
+  ],
+  "homepage": "http://godban.com.ua/projects/flexgrid",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/godban/flexgrid.git"
+  },
   "main": "dist/css/flexgrid.min.css",
+  "license": "MIT",
+  "author": {
+    "name": "Bogdan Plieshka",
+    "email": "bogdanplieshka@gmail.com",
+    "homepage": "http://johndoe.com"
+  },
   "ignore": [
     "node_modules",
     "bower_components",
@@ -14,7 +33,7 @@
     ".jshintrc",
     "favicon.ico",
     "Gruntfile.js",
-    "LICENSE.txt",
+    "index.html",
     "package.json",
     "README.md"
   ],

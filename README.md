@@ -1,4 +1,4 @@
-# FlexGrid
+# ▥ FlexGrid
 
 Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.
 

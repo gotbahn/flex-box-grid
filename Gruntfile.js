@@ -27,8 +27,8 @@ module.exports = function (grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
         path: path,
-        bannerCSS: '/*! <%= pkg.name %> - Flexible Boxes Grid System by <%= pkg.author %>, <%= grunt.template.today("dd-mm-yyyy") %> */\n',
-        bannerSCSS: '// <%= pkg.name %> - Flexible Boxes Grid System by <%= pkg.author %>, <%= grunt.template.today("dd-mm-yyyy") %>\n',
+        bannerCSS: '/*! <%= pkg.name %> - Flexible Boxes Grid System by <%= pkg.author.name %>, <%= grunt.template.today("dd-mm-yyyy") %> */\n',
+        bannerSCSS: '// <%= pkg.name %> - Flexible Boxes Grid System by <%= pkg.author.name %>, <%= grunt.template.today("dd-mm-yyyy") %>\n',
 
         usebanner: {
             options: {
@@ -134,6 +134,9 @@ module.exports = function (grunt) {
             'usebanner',
             'version'
         ]);
+    });
+
+    grunt.registerTask('tag', function () {
         if (version !== 'patch') {
             grunt.task.run('exec:gitTag');
         }
