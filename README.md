@@ -17,7 +17,7 @@ Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. 
 
 #### with CSS
 
-Download [full](dist/css/flexgrid.css) or [minified](dist/css/flexgrid.min.css) version.
+Download [full](https://raw.githubusercontent.com/godban/flexgrid/master/dist/css/flexgrid.css) or [minified](https://raw.githubusercontent.com/godban/flexgrid/master/dist/css/flexgrid.min.css) version.
 Include inside <code>&lt;head&gt;</code> section
 
 ```html
@@ -26,7 +26,7 @@ Include inside <code>&lt;head&gt;</code> section
 
 #### with Sass
 
-Download [flexgrid.zip](dist/flexgrid.zip).
+Download [flexgrid.zip](https://raw.githubusercontent.com/godban/flexgrid/master/dist/flexgrid.zip).
 Extract it to Sass working directory.
 Import <code>flexbox.scss</code> to your styles:
  
@@ -73,7 +73,7 @@ Media queries is a basis of any Responsive Grid System. To change column behavio
 
 As example column with <code>.M6</code> class will be halfwidth until the window width becomes equal to 768px or less matching <code>$screen__M</code>.
 
-![Areas](demo/images/media-queries.png =500x)
+![Areas](https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/media-queries.png =500x)
 
 Predefined break points:
 ```scss
