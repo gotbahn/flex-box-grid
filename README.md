@@ -3,6 +3,8 @@
 Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.
 
 - [Installation](#installation)
+    - [Manual](#manual)
+    - [via Bower](#bower)
 - [Demo & Documentation](#documentation)
     - [Basic](#basic)
     - [Media Queries](#mediaQueries)
@@ -11,7 +13,34 @@ Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. 
 
 ## <a name="installation"></a>Installation
 
+### <a name="manual"></a>Manual
+
+#### with CSS
+
+Download [full](dist/css/flexgrid.css) or [minified](dist/css/flexgrid.min.css) version.
+Include inside <code>&lt;head&gt;</code> section
+
+```html
+<link rel="stylesheet" href="pathto/flexbox.min.css">
+```
+
+#### with Sass
+
+Download [flexgrid.zip](dist/flexgrid.zip).
+Extract it to Sass working directory.
+Import <code>flexbox.scss</code> to your styles:
+ 
+```scss
+@import 'flexbox';
+```
+
+or use it as separate compiled file.
+
+### <a name="bower"></a>via Bower
+
     bower install flexgrid
+    
+and use CSS or Sass version from bower package.
 
 ## <a name="documentation"></a>Demo & Documentation
 
