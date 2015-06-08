@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1442px" height="502px" viewBox="0 0 1442 502" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-1" stroke="#FFFFFF" fill="#9D66C7" x="1" y="1" width="320" height="100"></rect>
+        <rect id="Rectangle-1-Copy-2" stroke="#FFFFFF" fill="#9D66C7" x="1" y="101" width="460" height="100"></rect>
+        <rect id="Rectangle-1-Copy-3" stroke="#FFFFFF" fill="#9D66C7" x="1" y="201" width="768" height="100"></rect>
+        <rect id="Rectangle-1-Copy-4" stroke="#FFFFFF" fill="#9D66C7" x="1" y="301" width="1024" height="100"></rect>
+        <rect id="Rectangle-1-Copy" stroke="#FFFFFF" fill="#9D66C7" x="1" y="401" width="1440" height="100"></rect>
+        <text id="XS" font-family="Open Sans" font-size="64" font-weight="260" fill="#FFFFFF">
+            <tspan x="30" y="72">XS</tspan>
+        </text>
+        <text id="320px" font-family="Open Sans" font-size="48" font-weight="260" fill="#FFFFFF">
+            <tspan x="169" y="67">320px</tspan>
+        </text>
+        <text id="480px" font-family="Open Sans" font-size="48" font-weight="260" fill="#FFFFFF">
+            <tspan x="308" y="168">480px</tspan>
+        </text>
+        <text id="768px" font-family="Open Sans" font-size="48" font-weight="260" fill="#FFFFFF">
+            <tspan x="613" y="267">768px</tspan>
+        </text>
+        <text id="1024px" font-family="Open Sans" font-size="48" font-weight="260" fill="#FFFFFF">
+            <tspan x="840" y="368">1024px</tspan>
+        </text>
+        <text id="1440px" font-family="Open Sans" font-size="48" font-weight="260" fill="#FFFFFF">
+            <tspan x="1250" y="468">1440px</tspan>
+        </text>
+        <text id="S" font-family="Open Sans" font-size="64" font-weight="260" fill="#FFFFFF">
+            <tspan x="30" y="175">S</tspan>
+        </text>
+        <text id="M" font-family="Open Sans" font-size="64" font-weight="260" fill="#FFFFFF">
+            <tspan x="30" y="273">M</tspan>
+        </text>
+        <text id="L" font-family="Open Sans" font-size="64" font-weight="260" fill="#FFFFFF">
+            <tspan x="30" y="375">L</tspan>
+        </text>
+        <text id="XL" font-family="Open Sans" font-size="64" font-weight="260" fill="#FFFFFF">
+            <tspan x="30" y="475">XL</tspan>
+        </text>
+    </g>
+</svg>

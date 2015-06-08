@@ -15,7 +15,9 @@
 <main class="main">
     <div class="container">
 
-        <header class="row">
+        <header
+            id="header"
+            class="row">
             <div class="M4">
                 <h1 class="page-title"><span class="accent-text">Flex</span>Grid</h1>
             </div>
@@ -33,103 +35,103 @@
             </div>
         </header>
 
+        <section id="basic">
+            <h2>Basic</h2>
 
-        <h2>Basic</h2>
+            <p>
+                FlexGrid systems are used for creating page layouts through a series of rows and columns that house your content.
+                <br/>
+                By default FlexGrid have 12 columns.
+            </p>
 
-        <p>
-            FlexGrid systems are used for creating page layouts through a series of rows and columns that house your content.
-            <br/>
-            By default FlexGrid have 12 columns.
-        </p>
-
-        <section class="section-example">
-            <div class="row">
-                <!--.M1*12>.col-content-example{.M1}-->
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
+            <div class="section-example">
+                <div class="row">
+                    <!--.M1*12>.col-content-example{.M1}-->
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">.M1</div>
+                    </div>
                 </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
+                <div class="row">
+                    <!--(.M8>.col-content-example{.M8})+.M4>.col-content-example{.M4}-->
+                    <div class="M8">
+                        <div class="col-content-example">.M8</div>
+                    </div>
+                    <div class="M4">
+                        <div class="col-content-example">.M4</div>
+                    </div>
                 </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
+                <div class="row">
+                    <!--.M6*2>.col-content-example{.M6}-->
+                    <div class="M6">
+                        <div class="col-content-example">.M6</div>
+                    </div>
+                    <div class="M6">
+                        <div class="col-content-example">.M6</div>
+                    </div>
                 </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
-                </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
-                </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
-                </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
-                </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
-                </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
-                </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
-                </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
-                </div>
-                <div class="M1">
-                    <div class="col-content-example">.M1</div>
+                <div class="row">
+                    <!--.M4*3>.col-content-example{.M4}-->
+                    <div class="M4">
+                        <div class="col-content-example">.M4</div>
+                    </div>
+                    <div class="M4">
+                        <div class="col-content-example">.M4</div>
+                    </div>
+                    <div class="M4">
+                        <div class="col-content-example">.M4</div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <!--(.M8>.col-content-example{.M8})+.M4>.col-content-example{.M4}-->
-                <div class="M8">
-                    <div class="col-content-example">.M8</div>
-                </div>
-                <div class="M4">
-                    <div class="col-content-example">.M4</div>
-                </div>
-            </div>
-            <div class="row">
-                <!--.M6*2>.col-content-example{.M6}-->
-                <div class="M6">
-                    <div class="col-content-example">.M6</div>
-                </div>
-                <div class="M6">
-                    <div class="col-content-example">.M6</div>
-                </div>
-            </div>
-            <div class="row">
-                <!--.M4*3>.col-content-example{.M4}-->
-                <div class="M4">
-                    <div class="col-content-example">.M4</div>
-                </div>
-                <div class="M4">
-                    <div class="col-content-example">.M4</div>
-                </div>
-                <div class="M4">
-                    <div class="col-content-example">.M4</div>
-                </div>
-            </div>
-        </section>
 
-        <ul>
-            <li>
-                Rows must be placed within a <code class="line-sass-class">.container</code> whith predefined paddings that equal half column gutter.
-            </li>
-            <li>
-                Use rows <code class="line-sass-class">.row</code> to create horizontal groups of columns.
-            </li>
-            <li>
-                Content should be placed within columns with classes <code class="line-sass-class">.XS-n, .S-n, .M-n, .L-n, .XL-n</code> where <code class="line-sass-class">n</code> is columns number from 1 to 12 (by default).
-            </li>
-            <li>
-                Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code class="line-sass-class">.row</code>, by default it's 10px.
-            </li>
-        </ul>
+            <ul>
+                <li>
+                    Rows must be placed within a <code class="line-sass-class">.container</code> with predefined paddings that equal half column gutter.
+                </li>
+                <li>
+                    Use rows <code class="line-sass-class">.row</code> to create horizontal groups of columns.
+                </li>
+                <li>
+                    Content should be placed within columns with classes <code class="line-sass-class">.XS-n, .S-n, .M-n, .L-n, .XL-n</code> where <code class="line-sass-class">n</code> is columns number from 1 to 12 (by default).
+                </li>
+                <li>
+                    Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code class="line-sass-class">.row</code>, by default it's 10px.
+                </li>
+            </ul>
 
-        <p class="code-block-description">HTML syntax is completely simple:</p>
+            <p class="code-block-description">HTML syntax is completely simple:</p>
 
 <pre class="language-markup"><code>
 &lt;div class="container">
@@ -141,21 +143,86 @@
     &lt;/div>
 &lt;/div>
 </code></pre>
+        </section>
 
-        <h2>FAQ</h2>
+        <section class="mediaQueries">
+            <h2>Media Queries</h2>
+            <p>
+                Media queries is a basis of any Responsive Grid System. To change column behavior each media query
+                breakpoint connected with column class name with simply recognizing size name: <span class="line-sass-class">XS, S, M, L, XL</span>.
+                <br/>
+                <br/>
+                As example column with <span class="line-sass-class">.M6</span> class will be halfwidth until the window width becomes equal to 768px or less matching <span class="line-sass-variable">$screen__M</span>.
+            </p>
+            <div class="row">
+                <div class="M5">
+                    <p class="code-block-description">Areas:</p>
+                    <img
+                        src="demo/images/media-queries.svg"
+                        alt="Media Queries"
+                        width="365"/>
+                </div>
+                <div class="M4 M1-off">
+                    <p class="code-block-description">Predefined break points:</p>
+<pre class="language-scss"><code>
+    $screen__XS: 320px;
+    $screen__S:  480px;
+    $screen__M:  768px;
+    $screen__L:  1024px;
+    $screen__XL: 1440px;
+</code></pre>
+                </div>
+            </div>
+            <div class="row">
+                <div class="M6">
+                    <p class="code-block-description">
+                        To change column content behavior...
+                    </p>
+<pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M6">
+            &lt;div class="foo">...&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
 
-        <dl>
-            <dt>What is Grid?</dt>
-            <dd>
-                The vast majority of websites out there use a grid. They may not explicitly have a grid system in place, but if they have a "main content area" floated to the left a "sidebar" floated to the right, it's a simple grid.
-            </dd>
-            <dt>
-                Why use Grid at all?
-            </dt>
-            <dd>
-                Using grid system can significant speed up your work, keep you code understandable and DRY.
-            </dd>
-        </dl>
+                </div>
+                <div class="M6">
+                    <p class="code-block-description">
+                        ...use appropriate media query
+                    </p>
+<pre class="language-scss"><code>
+@media (max-width: $screen__M) {
+    .foo {
+        ...
+    }
+}
+    
+
+</code></pre>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+
+            <dl>
+                <dt>What is Grid?</dt>
+                <dd>
+                    The vast majority of websites out there use a grid. They may not explicitly have a grid system in place, but if they have a "main content area" floated to the left a "sidebar" floated to the right, it's a simple grid.
+                </dd>
+                <dt>
+                    Why use Grid at all?
+                </dt>
+                <dd>
+                    Using grid system can significant speed up your work, keep you code understandable and DRY.
+                </dd>
+            </dl>
+        </section>
 
 
     </div>

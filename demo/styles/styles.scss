@@ -2,19 +2,9 @@
 //  Flexgrid demo
 //  ---------------------------------------------
 @import '../../src/styles/flexgrid';
+@import '_variables.scss';
 @import '_prism.scss';
 @import '_icons.scss';
-
-$color__purple: #9d66c7;
-$color__blue: #4cbef4;
-$color__gray-dark: #666;
-
-
-$col__background-color: $color__purple;
-$col__color: #fff;
-$col__height: 30px;
-
-$col-example__indent: $grid__gutter;
 
 *,
 *:after,
@@ -88,6 +78,11 @@ a {
     }
 }
 
+img {
+    width: auto;
+    max-width: 100%;
+}
+
 .main {
     max-width: 960px;
     margin: 0 auto;
@@ -141,10 +136,19 @@ a {
     font-weight: 300;
 }
 
-.line-sass-class {
-    color: $color__blue;
+.line-sass-class,
+.line-sass-variable {
     margin-right: .25em;
     margin-left: .25em;
+    font-family: monospace;
+}
+
+.line-sass-class {
+    color: #07a;
+}
+
+.line-sass-variable {
+    color: #e90;
 }
 
 .code-block-description {
@@ -205,4 +209,12 @@ a {
         font-size: 18px;
         margin-top: -7px;
     }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    font-size: 13px;
+    font-family: monospace;
+    background: #F5F0F5;
+    border-radius: 5px;
 }

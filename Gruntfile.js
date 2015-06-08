@@ -154,9 +154,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('tag', function () {
-        if (version !== 'patch') {
-            grunt.task.run('exec:gitTag');
-        }
+        grunt.task.run('exec:gitTag');
     });
 
 };

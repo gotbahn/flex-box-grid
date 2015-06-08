@@ -112,7 +112,7 @@
 .XS12-off {
   margin-left: 100%; }
 
-@media (min-width: 460px) {
+@media (min-width: 480px) {
   .S1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%; }
