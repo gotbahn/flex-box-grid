@@ -117,6 +117,9 @@ module.exports = function (grunt) {
         },
 
         sass: {
+            options: {
+                precision: 3
+            },
             flexgrid: {
                 files: {
                     '<%= path.dist.css %>flexgrid.css': path.src.styles + 'flexgrid.scss'
@@ -128,6 +131,18 @@ module.exports = function (grunt) {
                 },
                 files: {
                     '<%= path.demo.styles %>styles.css': path.demo.styles + 'styles.scss'
+                }
+            }
+        },
+
+        autoprefixer: {
+            options: {
+                browsers: ['last 3 versions']
+            },
+            main: {
+                files: {
+                    'dist/css/flexgrid.css': 'dist/css/flexgrid.css',
+                    'demo/styles/styles.css': 'demo/styles/styles.css'
                 }
             }
         },
@@ -145,6 +160,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', function () {
         grunt.task.run([
             'sass',
+            'autoprefixer',
             'cssmin',
             'copy',
             'usebanner',
