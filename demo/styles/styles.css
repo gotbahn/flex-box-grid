@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -535,6 +536,22 @@ pre[class*='language-'][data-language]::before {
   padding: 0 0.5em;
   text-shadow: none; }
 
+@font-face {
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Font Awesome";
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg#fontawesome-webfont") format("svg"); }
+
+.btn-github:before, .btn-download-css:before, .btn-download-scss:before {
+  display: inline-block;
+  font-family: "Font Awesome";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
 *,
 *:after,
 *:before {
@@ -545,7 +562,8 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #666; }
 
 h1, h2, h3 {
   font-weight: 300;
@@ -596,11 +614,23 @@ a {
   margin: 0 auto;
   padding: 30px; }
 
+.header-actions {
+  margin-bottom: 10px;
+  margin-top: 13px;
+  text-align: right; }
+  @media (max-width: 768px) {
+    .header-actions {
+      text-align: center;
+      margin-bottom: 2em;
+      margin-top: 2em; } }
+
 .page-title {
-  text-align: center;
   font-weight: 300;
   margin-bottom: .25em;
   font-size: 3em; }
+  @media (max-width: 768px) {
+    .page-title {
+      text-align: center; } }
   .page-title .accent-text {
     color: #9d66c7; }
 
@@ -608,7 +638,7 @@ a {
   font-weight: 300;
   font-size: 16px;
   border-bottom: 1px dashed;
-  padding-bottom: 1.5em; }
+  padding-bottom: 2em; }
 
 .section-example {
   margin-bottom: 1.5em; }
@@ -626,12 +656,51 @@ a {
   font-weight: 300; }
 
 .line-sass-class {
-  color: #07a;
+  color: #4cbef4;
   margin-right: .25em;
   margin-left: .25em; }
 
 .code-block-description {
   font-size: 13px;
   margin-bottom: .5em; }
+
+.btn {
+  display: inline-block;
+  border: 1px solid #666;
+  border-radius: 3px;
+  padding: 0.5em 15px 0.5em 38px;
+  color: #666;
+  text-decoration: none;
+  transition-property: color, border-color;
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  font-weight: 300;
+  margin: 0 5px 10px;
+  font-size: 15px;
+  position: relative; }
+  .btn:hover {
+    border-color: #4cbef4;
+    color: #4cbef4; }
+  .btn:active {
+    transform: scale(0.95); }
+  .btn:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    left: 15px;
+    font-size: 20px; }
+
+.btn-github:before {
+  content: ""; }
+
+.btn-download-css:before {
+  content: "";
+  font-size: 18px;
+  margin-top: -7px; }
+
+.btn-download-scss:before {
+  content: "";
+  font-size: 18px;
+  margin-top: -7px; }
 
 /*# sourceMappingURL=styles.css.map */

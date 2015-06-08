@@ -3,8 +3,13 @@
 //  ---------------------------------------------
 @import '../../src/styles/flexgrid';
 @import '_prism.scss';
+@import '_icons.scss';
 
 $color__purple: #9d66c7;
+$color__blue: #4cbef4;
+$color__gray-dark: #666;
+
+
 $col__background-color: $color__purple;
 $col__color: #fff;
 $col__height: 30px;
@@ -24,6 +29,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    color: $color__gray-dark;
 }
 
 h1, h2, h3 {
@@ -76,9 +82,9 @@ p {
 }
 
 a {
-    color: #4cbef4;
+    color: $color__blue;
     &:hover {
-        color: darken(#4cbef4, 5%);
+        color: darken($color__blue, 5%);
     }
 }
 
@@ -88,11 +94,24 @@ a {
     padding: $col__height;
 }
 
+.header-actions {
+    margin-bottom: 10px;
+    margin-top: 13px;
+    text-align: right;
+    @media (max-width: $screen__M) {
+        text-align: center;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+}
+
 .page-title {
-    text-align: center;
     font-weight: 300;
     margin-bottom: .25em;
     font-size: 3em;
+    @media (max-width: $screen__M) {
+        text-align: center;
+    }
     .accent-text {
         color: $color__purple;
     }
@@ -102,7 +121,7 @@ a {
     font-weight: 300;
     font-size: 16px;
     border-bottom: 1px dashed;
-    padding-bottom: 1.5em;
+    padding-bottom: 2em;
 }
 
 .section-example {
@@ -123,7 +142,7 @@ a {
 }
 
 .line-sass-class {
-    color: #07a;
+    color: $color__blue;
     margin-right: .25em;
     margin-left: .25em;
 }
@@ -131,4 +150,59 @@ a {
 .code-block-description {
     font-size: 13px;
     margin-bottom: .5em;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid $color__gray-dark;
+    border-radius: 3px;
+    padding: .5em 15px .5em 38px;
+    color: $color__gray-dark;
+    text-decoration: none;
+    transition-property: color, border-color;
+    transition-timing-function: linear;
+    transition-duration: .15s;
+    font-weight: 300;
+    margin: 0 5px 10px;
+    font-size: 15px;
+    position: relative;
+    &:hover {
+        border-color: $color__blue;
+        color: $color__blue;
+    }
+    &:active {
+        transform: scale(.95);
+    }
+    &:before {
+        position: absolute;
+        top: 50%;
+        margin-top: -9px;
+        left: 15px;
+        font-size: 20px;
+    }
+}
+
+.btn-github {
+    &:before {
+        @extend %icon;
+        content: $icon-github;
+    }
+}
+
+.btn-download-css {
+    &:before {
+        @extend %icon;
+        content: $icon-css3;
+        font-size: 18px;
+        margin-top: -7px;
+    }
+}
+
+.btn-download-scss {
+    &:before {
+        @extend %icon;
+        content: $icon-file-zip-o;
+        font-size: 18px;
+        margin-top: -7px;
+    }
 }

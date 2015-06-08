@@ -9,7 +9,7 @@
     "Responsive"
   ],
   "homepage": "http://godban.com.ua/projects/flexgrid",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/godban/flexgrid.git"
@@ -26,6 +26,7 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-banner": "^0.4.0",
+    "grunt-contrib-compress": "^0.13.0",
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-cssmin": "^0.12.3",
     "grunt-contrib-watch": "~0.5.3",

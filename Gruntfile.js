@@ -56,6 +56,22 @@ module.exports = function (grunt) {
             }
         },
 
+        compress: {
+            scss: {
+                options: {
+                    archive: 'dist/<%= pkg.name.toLowerCase() %>.zip'
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: path.dist.scss,
+                        src: '**',
+                        filter: 'isFile'
+                    }
+                ]
+            }
+        },
+
         version: {
             options: {
                 release: version
@@ -132,6 +148,7 @@ module.exports = function (grunt) {
             'cssmin',
             'copy',
             'usebanner',
+            'compress',
             'version'
         ]);
     });
