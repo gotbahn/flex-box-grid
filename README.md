@@ -73,7 +73,7 @@ Media queries is a basis of any Responsive Grid System. To change column behavio
 
 As example column with <code>.M6</code> class will be halfwidth until the window width becomes equal to 768px or less matching <code>$screen__M</code>.
 
-![Areas](https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/media-queries.png =500x)
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/media-queries.png" width="500" alt="Areas">
 
 Predefined break points:
 ```scss
