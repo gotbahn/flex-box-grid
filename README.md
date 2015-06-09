@@ -8,6 +8,7 @@ Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. 
 - [Demo & Documentation](#documentation)
     - [Basic](#basic)
     - [Media Queries](#mediaQueries)
+    - [Mixed](#mixed)
 - [FAQ](#faq)
 
 
@@ -103,6 +104,26 @@ To change column content behavior...
     }
 }
 ```
+
+### <a name="mixed"></a>Mixed
+
+Wanna different behavior on multiple devices? Try to mix columns.
+
+```html
+<div class="container">
+    <div class="row">
+        <div class="M4 L8">...</div>
+        <div class="M8 L4">...</div>
+    </div>
+    <div class="row">
+        <div class="M6 L4">...</div>
+        <div class="M6 L4">...</div>
+        <div class="M12 L4">...</div>
+    </div>
+</div>
+```
+
+You can mix any number of different grid classes
 
 ## <a name="faq"></a>FAQ
 
