@@ -264,6 +264,55 @@
             </p>
         </section>
 
+        <section id="offset">
+            <h2>Offseting columns</h2>
+            <p>
+                Move columns right using <code class="line-sass-class">-off</code> suffix on grid classes. These will increase left indent of a column. As example <code class="line-sass-class">.M2-off</code> moves <code class="line-sass-class">.M6</code> block over 2 columns.
+            </p>
+
+            <div class="section-example">
+                <div class="row">
+                    <!--(.M6.M1-off>.col-content-example{.M6 .M1-off})+(.M5>.col-content-example{.M5})-->
+                    <div class="M6 M1-off">
+                        <div class="col-content-example">.M6 .M1-off</div>
+                    </div>
+                    <div class="M5">
+                        <div class="col-content-example">.M5</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--(.M6.M3-off>.col-content-example{.M6 .M2-off})-->
+                    <div class="M6 M3-off">
+                        <div class="col-content-example">.M6 .M2-off</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="M4">
+                        <div class="col-content-example">.M4</div>
+                    </div>
+                    <div class="M4 M4-off">
+                        <div class="col-content-example">.M4 .M4-off</div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M6 M1-off">...&lt;/div>
+        &lt;div class="M5">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row">
+        &lt;div class="M6 M2-off">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row">
+        &lt;div class="M4">...&lt;/div>
+        &lt;div class="M4 M4-off">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
         <section id="faq">
             <h2>FAQ</h2>
 

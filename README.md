@@ -105,7 +105,7 @@ To change column content behavior...
 }
 ```
 
-### <a name="mixed"></a>Mixed
+### <a name="mixed"></a>Mixed columns
 
 Wanna different behavior on multiple devices? Try to mix columns.
 
@@ -124,6 +124,26 @@ Wanna different behavior on multiple devices? Try to mix columns.
 ```
 
 You can mix any number of different grid classes
+
+### <a name="offset"></a>Offseting columns
+
+Move columns right using <code>-off</code> suffix on grid classes. These will increase left indent of a column. As example <code>.M2-off</code> moves <code>.M6</code> block over 2 columns.
+
+```html
+<div class="container">
+    <div class="row">
+        <div class="M6 M1-off">...</div>
+        <div class="M5">...</div>
+    </div>
+    <div class="row">
+        <div class="M6 M2-off">...</div>
+    </div>
+    <div class="row">
+        <div class="M4">...</div>
+        <div class="M4 M4-off">...</div>
+    </div>
+</div>
+```
 
 ## <a name="faq"></a>FAQ
 
