@@ -8,7 +8,9 @@ Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. 
 - [Demo & Documentation](#documentation)
     - [Basic](#basic)
     - [Media Queries](#mediaQueries)
-    - [Mixed](#mixed)
+    - [Mixing columns](#mixed)
+    - [Offsetting columns](#offset)
+    - [Nesting columns](#nested)
 - [FAQ](#faq)
 
 
@@ -105,7 +107,7 @@ To change column content behavior...
 }
 ```
 
-### <a name="mixed"></a>Mixed columns
+### <a name="mixed"></a>Mixing columns
 
 Wanna different behavior on multiple devices? Try to mix columns.
 
@@ -141,6 +143,30 @@ Move columns right using <code>-off</code> suffix on grid classes. These will in
     <div class="row">
         <div class="M4">...</div>
         <div class="M4 M4-off">...</div>
+    </div>
+</div>
+```
+
+### <a name="nested"></a>Nesting columns
+
+Grid columns can be nested one into another.
+
+```html
+<div class="container">
+    <div class="row">
+        <div class="M8">
+            <div class="row">
+                <div class="M6">...</div>
+                <div class="M6">...</div>
+            </div>
+        </div>
+        <div class="M4">
+            <div class="row">
+                <div class="M4">...</div>
+                <div class="M4">...</div>
+                <div class="M4">...</div>
+            </div>
+        </div>
     </div>
 </div>
 ```

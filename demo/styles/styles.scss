@@ -123,17 +123,29 @@ img {
     margin-bottom: 1.5em;
 }
 
+.col-content-example-wrap,
 .col-content-example {
-    background-color: $col__background-color;
-    color: $col__color;
-    margin-bottom: $col-example__indent;
-    padding: $col-example__indent - 1px $col-example__indent $col-example__indent + 1px;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: $col-example__indent + 1px;
+    color: $col__color;
     font-weight: 300;
+    font-size: $col-example__indent + 1px;
+}
+
+.col-content-example-wrap {
+    background-color: #b58bd5;
+    padding: 10px 0 9px;
+    .col-content-example {
+        margin-top: 10px;
+    }
+}
+
+.col-content-example {
+    background-color: $col__background-color;
+    margin-bottom: $col-example__indent;
+    padding: $col-example__indent - 1px $col-example__indent $col-example__indent + 1px;
 }
 
 .line-sass-class,

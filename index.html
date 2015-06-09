@@ -216,7 +216,7 @@
         </section>
 
         <section id="mixed">
-            <h2>Mixed</h2>
+            <h2>Mixing columns</h2>
 
             <p>
                 Wanna different behavior on multiple devices? Try to mix columns.
@@ -308,6 +308,67 @@
     &lt;div class="row">
         &lt;div class="M4">...&lt;/div>
         &lt;div class="M4 M4-off">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
+        <section id="nested">
+            <h2>Nesting columns</h2>
+            <p>
+                Grid columns can be nested one into another.
+            </p>
+
+            <div class="section-example">
+                <div class="row">
+                    <div class="M8">
+                        <div class="col-content-example-wrap">
+                            .M8
+                            <div class="row">
+                                <div class="M6">
+                                    <div class="col-content-example">.M6</div>
+                                </div>
+                                <div class="M6">
+                                    <div class="col-content-example">.M6</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="M4">
+                        <div class="col-content-example-wrap">
+                            .M4
+                            <div class="row">
+                                <div class="M4">
+                                    <div class="col-content-example">.M4</div>
+                                </div>
+                                <div class="M4">
+                                    <div class="col-content-example">.M4</div>
+                                </div>
+                                <div class="M4">
+                                    <div class="col-content-example">.M4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M8">
+            &lt;div class="row">
+                &lt;div class="M6">...&lt;/div>
+                &lt;div class="M6">...&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="M4">
+            &lt;div class="row">
+                &lt;div class="M4">...&lt;/div>
+                &lt;div class="M4">...&lt;/div>
+                &lt;div class="M4">...&lt;/div>
+            &lt;/div>
+        &lt;/div>
     &lt;/div>
 &lt;/div>
 </code></pre>
