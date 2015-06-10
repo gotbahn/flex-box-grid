@@ -90,13 +90,13 @@ img {
 }
 
 .header-actions {
-    margin-bottom: 10px;
-    margin-top: 13px;
-    text-align: right;
-    @media (max-width: $screen__M) {
-        text-align: center;
-        margin-bottom: 2em;
-        margin-top: 2em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: center;
+    @media (min-width: $screen__M) {
+        text-align: right;
+        margin-bottom: 10px;
+        margin-top: 13px;
     }
 }
 
@@ -104,8 +104,9 @@ img {
     font-weight: 300;
     margin-bottom: .25em;
     font-size: 3em;
-    @media (max-width: $screen__M) {
-        text-align: center;
+    text-align: center;
+    @media (min-width: $screen__M) {
+        text-align: left;
     }
     .accent-text {
         color: $color__purple;

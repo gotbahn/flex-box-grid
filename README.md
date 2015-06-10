@@ -1,6 +1,6 @@
 # ▥ FlexGrid
 
-Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.
+Create clean, simple and powerful multi-device, mobile first grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.
 
 - [Installation](#installation)
     - [Manual](#manual)
@@ -56,7 +56,7 @@ By default FlexGrid have 12 columns.
 
 - Rows must be placed within a <code>.container</code> with predefined paddings that equal half column gutter.
 - Use rows .row to create horizontal groups of columns.
-- Content should be placed within columns with classes <code>.XS-n, .S-n, .M-n, .L-n, .XL-n</code> where n is columns number from 1 to 12 (by default).
+- Content should be placed within columns with classes <code>.X-n, .S-n, .M-n, .L-n, .XL-n</code> where n is columns number from 1 to 12 (by default).
 - Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>, by default it's 10px.
 
 ```html
@@ -72,7 +72,7 @@ By default FlexGrid have 12 columns.
 
 ### <a name="mediaQueries"></a>Media Queries
 
-Media queries is a basis of any Responsive Grid System. To change column behavior each media query breakpoint connected with column class name with simply recognizing size name: <code>XS, S, M, L, XL</code>. 
+Media queries is a basis of any Responsive Grid System. To change column behavior each media query breakpoint connected with column class name with simply recognizing size name: <code>X, S, M, L, XL</code>. 
 
 As example column with <code>.M6</code> class will be halfwidth until the window width becomes equal to 768px or less matching <code>$screen__M</code>.
 
@@ -80,11 +80,10 @@ As example column with <code>.M6</code> class will be halfwidth until the window
 
 Predefined break points:
 ```scss
-$screen__XS: 320px;
-$screen__S:  480px;
-$screen__M:  768px;
-$screen__L:  1024px;
-$screen__XL: 1440px;
+$break__S:  480px;
+$break__M:  768px;
+$break__L:  1024px;
+$break__XL: 1440px;
 ```
 
 To change column content behavior...
@@ -100,7 +99,7 @@ To change column content behavior...
 
 ...use appropriate media query
 ```scss
-@media (max-width: $screen__M) {
+@media (min-width: $screen__M) {
     .foo {
         ...
     }

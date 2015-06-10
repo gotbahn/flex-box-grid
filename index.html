@@ -4,8 +4,8 @@
     <title>FlexGrid</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Create clean, simple and powerful multi-device grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.">
-    <meta name="keywords" content="Grid, Flex, FlexBox, Flex Grid, Responsive, Grid System"/>
+    <meta name="description" content="Create clean, simple and powerful multi-device, mobile first grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.">
+    <meta name="keywords" content="Grid, Flex, FlexBox, Flex Grid, Responsive, Grid System, Mobile First"/>
     <link rel="stylesheet" href="./bower_components/normalize.css/normalize.css"/>
     <link rel="stylesheet" href="./demo/styles/styles.css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
@@ -28,9 +28,9 @@
                     <a class="btn btn-github" href="https://github.com/godban/flexgrid" target="_blank">GitHub</a>
                 </div>
             </div>
-            <div class="XS12">
+            <div class="X12">
                 <p class="page-description">
-                    Create clean, simple and powerful multi-device grid layouts via <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes" target="_blank">Flexible Boxes</a>. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.
+                    Create clean, simple and powerful multi-device, mobile first grid layouts via <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes" target="_blank">Flexible Boxes</a>. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.
                 </p>
             </div>
         </header>
@@ -124,7 +124,7 @@
                     Use rows <code class="line-sass-class">.row</code> to create horizontal groups of columns.
                 </li>
                 <li>
-                    Content should be placed within columns with classes <code class="line-sass-class">.XS-n, .S-n, .M-n, .L-n, .XL-n</code> where <code class="line-sass-class">n</code> is columns number from 1 to 12 (by default).
+                    Content should be placed within columns with classes <code class="line-sass-class">.X-n, .S-n, .M-n, .L-n, .XL-n</code> where <code class="line-sass-class">n</code> is columns number from 1 to 12 (by default).
                 </li>
                 <li>
                     Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code class="line-sass-class">.row</code>, by default it's 10px.
@@ -157,7 +157,7 @@
             <h2>Media Queries</h2>
             <p>
                 Media queries is a basis of any Responsive Grid System. To change column behavior each media query
-                breakpoint connected with column class name with simply recognizing size name: <span class="line-sass-class">XS, S, M, L, XL</span>.
+                breakpoint connected with column class name with simply recognizing size name: <span class="line-sass-class">X, S, M, L, XL</span>.
                 <br/>
                 <br/>
                 As example column with <span class="line-sass-class">.M6</span> class will be halfwidth until the window width becomes equal to 768px or less matching <span class="line-sass-variable">$screen__M</span>.
@@ -173,11 +173,10 @@
                 <div class="M4 M1-off">
                     <p class="code-block-description">Predefined break points:</p>
 <pre class="language-scss"><code>
-    $screen__XS: 320px;
-    $screen__S:  480px;
-    $screen__M:  768px;
-    $screen__L:  1024px;
-    $screen__XL: 1440px;
+    $break__S:  480px;
+    $break__M:  768px;
+    $break__L:  1024px;
+    $break__XL: 1440px;
 </code></pre>
                 </div>
             </div>
@@ -202,7 +201,7 @@
                         ...use appropriate media query
                     </p>
 <pre class="language-scss"><code>
-@media (max-width: $screen__M) {
+@media (min-width: $screen__M) {
     .foo {
         ...
     }

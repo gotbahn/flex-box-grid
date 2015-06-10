@@ -1,4 +1,4 @@
-// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 09-06-2015
+// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 10-06-2015
 
 //
 //  Grid
@@ -26,10 +26,10 @@
 
 @include create-all-grid-columns();
 
-//  Columns XS
+//  Columns X
 //  ---------------------------------------------
 
-@include create-grid-columns($name__XS);
+@include create-grid-columns($name__X);
 
 //  Columns S
 //  ---------------------------------------------

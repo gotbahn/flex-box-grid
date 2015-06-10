@@ -1,4 +1,4 @@
-// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 09-06-2015
+// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 10-06-2015
 
 //
 //  Variables
@@ -7,14 +7,18 @@
 $grid__columns: 12;
 $grid__gutter:  10px;
 
-$name__XS: XS;
+$name__X: X;
 $name__S: S;
 $name__M: M;
 $name__L: L;
 $name__XL: XL;
 
-$screen__XS: 320px;
-$screen__S:  480px;
-$screen__M:  768px;
-$screen__L:  1024px;
-$screen__XL: 1440px;
+$break__S:  480px;
+$break__M:  768px;
+$break__L:  1024px;
+$break__XL: 1440px;
+
+$screen__S:  $break__S + 1;
+$screen__M:  $break__M + 1;
+$screen__L:  $break__L + 1;
+$screen__XL: $break__XL + 1;

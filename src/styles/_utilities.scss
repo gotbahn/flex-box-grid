@@ -37,7 +37,7 @@
 }
 
 //  Generate extra small columns
-@mixin create-XS(
+@mixin create-X(
     $_columns,
     $_gutter: $grid__gutter
 ) {
@@ -45,7 +45,7 @@
     max-width: percentage(($_columns / $grid__columns));
 }
 
-@mixin create-XS-off(
+@mixin create-X-off(
     $_columns
 ) {
     margin-left: percentage(($_columns / $grid__columns));
@@ -116,10 +116,10 @@
 
 @mixin create-all-grid-columns(
     $i: 1,
-    $list: '.#{$name__XS}#{$i}, .#{$name__S}#{$i}, .#{$name__M}#{$i}, .#{$name__L}#{$i}, .#{$name__XL}#{$i}'
+    $list: '.#{$name__X}#{$i}, .#{$name__S}#{$i}, .#{$name__M}#{$i}, .#{$name__L}#{$i}, .#{$name__XL}#{$i}'
 ) {
     @for $i from (1 + 1) through $grid__columns {
-        $list: '#{$list}, .#{$name__XS}#{$i}, .#{$name__S}#{$i}, .#{$name__M}#{$i}, .#{$name__L}#{$i}, .#{$name__XL}#{$i}';
+        $list: '#{$list}, .#{$name__X}#{$i}, .#{$name__S}#{$i}, .#{$name__M}#{$i}, .#{$name__L}#{$i}, .#{$name__XL}#{$i}';
     }
     #{$list} {
         @include grid-column();
