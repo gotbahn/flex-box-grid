@@ -1,6 +1,6 @@
 {
   "name": "FlexGrid",
-  "description": "Create clean, simple and powerful multi-device, mobile first grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.",
+  "description": "Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs.",
   "keywords": [
     "Grid",
     "Flex",
@@ -10,7 +10,7 @@
     "Mobile first"
   ],
   "homepage": "http://godban.com.ua/projects/flexgrid",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "repository": {
     "type": "git",
     "url": "git://github.com/godban/flexgrid.git"

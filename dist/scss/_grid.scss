@@ -1,4 +1,4 @@
-// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 18-06-2015
+// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 19-06-2015
 
 //
 //  Grid
@@ -62,30 +62,10 @@
 //  Additional
 //  ---------------------------------------------
 
-.col-top {
-    align-items: flex-start;
-}
-
-.col-middle {
-    align-items: center;
-}
-
-.col-bottom {
-    align-items: flex-end;
-}
-
 .col-around {
     justify-content: space-around;
 }
 
 .col-between {
     justify-content: space-between;
-}
-
-.col-first {
-    order: -1;
-}
-
-.col-last {
-    order: 1;
 }

@@ -31,6 +31,13 @@ h2 {
     font-size: 30px;
 }
 
+h3 {
+    font-size: 24px;
+    code {
+        font-size: 14px;
+    }
+}
+
 pre[class*='language-'] {
     margin-top: 0;
     margin-bottom: 2em;
@@ -124,6 +131,15 @@ img {
     margin-bottom: 1.5em;
 }
 
+.row-example {
+    background-color: lighten($color__purple, 30%);
+    margin-bottom: 3px;
+    small {
+        display: inline-block;
+        padding: .5em 1em;
+    }
+}
+
 .col-content-example-wrap,
 .col-content-example {
     text-align: center;
@@ -147,6 +163,10 @@ img {
     background-color: $col__background-color;
     margin-bottom: $col-example__indent;
     padding: $col-example__indent - 1px $col-example__indent $col-example__indent + 1px;
+}
+
+.col-content-example-x2 {
+    padding: $col-example__indent * 3 - 1px $col-example__indent $col-example__indent * 3 + 1px;
 }
 
 .line-sass-class,

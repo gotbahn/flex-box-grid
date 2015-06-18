@@ -4,7 +4,7 @@
     <title>FlexGrid</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Create clean, simple and powerful multi-device, mobile first grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.">
+    <meta name="description" content="Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs.">
     <meta name="keywords" content="Grid, Flex, FlexBox, Flex Grid, Responsive, Grid System, Mobile First"/>
     <link rel="stylesheet" href="./bower_components/normalize.css/normalize.css"/>
     <link rel="stylesheet" href="./demo/styles/styles.css"/>
@@ -30,7 +30,7 @@
             </div>
             <div class="X12">
                 <p class="page-description">
-                    Create clean, simple and powerful multi-device, mobile first grid layouts via <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes" target="_blank">Flexible Boxes</a>. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.
+                    Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes" target="_blank">Flexible Boxes</a>. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs.
                 </p>
             </div>
         </header>
@@ -409,30 +409,134 @@
 <pre class="language-markup"><code>
 &lt;div class="container">
     &lt;div class="row">
-        &lt;div class="M3 X--order4">
-            &lt;div class="col-content-example">.X3 .X--order4&lt;/div>
-        &lt;/div>
-        &lt;div class="M3 X--order1">
-            &lt;div class="col-content-example">.X3 .X--order1&lt;/div>
-        &lt;/div>
-        &lt;div class="M3 X--order2">
-            &lt;div class="col-content-example">.X3 .X--order2&lt;/div>
-        &lt;/div>
-        &lt;div class="M3 X--order3">
-            &lt;div class="col-content-example">.X3 .X--order3&lt;/div>
-        &lt;/div>
+        &lt;div class="M3 X--order4">...&lt;/div>
+        &lt;div class="M3 X--order1">...&lt;/div>
+        &lt;div class="M3 X--order2">...&lt;/div>
+        &lt;div class="M3 X--order3">...&lt;/div>
     &lt;/div>
     &lt;div class="row">
-        &lt;div class="M6 M--order6">
-            &lt;div class="col-content-example">.M3 .M--order2&lt;/div>
-        &lt;/div>
-        &lt;div class="M3 M--order6">
-            &lt;div class="col-content-example">.M3 .M--order1&lt;/div>
-        &lt;/div>
+        &lt;div class="M6 M--order6">...&lt;/div>
+        &lt;div class="M3 M--order6">...&lt;/div>
     &lt;/div>
 &lt;/div>
 </code></pre>
         </section>
+
+        <section id="alignment">
+            <h2>Aligning columns</h2>
+            <h3 id="alignmentHorizontal">Horizontal</h3>
+            <p>
+                There is predefined classes for horizontal alignment with <code class="line-sass-class">--start</code>, <code class="line-sass-class">--center</code>, <code class="line-sass-class">--end</code></p>
+            <div class="section-example">
+                <div class="row-example">
+                    <small>.X--start</small>
+                    <div class="row X--start">
+                        <div class="X3">
+                            <div class="col-content-example">.X3</div>
+                        </div>
+                        <div class="X3">
+                            <div class="col-content-example">.X3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-example">
+                    <small>.X--center</small>
+                    <div class="row X--center">
+                        <div class="X3">
+                            <div class="col-content-example">.X3</div>
+                        </div>
+                        <div class="X3">
+                            <div class="col-content-example">.X3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-example">
+                    <small>.X--end</small>
+                    <div class="row X--end">
+                        <div class="X3">
+                            <div class="col-content-example">.X3</div>
+                        </div>
+                        <div class="X3">
+                            <div class="col-content-example">.X3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--start">
+        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X3">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--center">
+        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X3">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--end">
+        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X3">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+
+            <h3 id="alignmentVertical">Vertical</h3>
+            <p>
+                There is also predefined classes for vertical alignment with <code class="line-sass-class">--top</code>, <code class="line-sass-class">--middle</code>, <code class="line-sass-class">--bottom</code></p>
+            <div class="section-example">
+                <div class="row-example">
+                    <small>.X--top</small>
+                    <div class="row X--top">
+                        <div class="X6">
+                            <div class="col-content-example col-content-example-x2">.X6</div>
+                        </div>
+                        <div class="X6">
+                            <div class="col-content-example">.X6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-example">
+                    <small>.X--middle</small>
+                    <div class="row X--middle">
+                        <div class="X6">
+                            <div class="col-content-example col-content-example-x2">.X6</div>
+                        </div>
+                        <div class="X6">
+                            <div class="col-content-example">.X6</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-example">
+                    <small>.X--bottom</small>
+                    <div class="row X--bottom">
+                        <div class="X6">
+                            <div class="col-content-example col-content-example-x2">.X6</div>
+                        </div>
+                        <div class="X6">
+                            <div class="col-content-example">.X6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--top">
+        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X3">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--middle">
+        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X3">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--bottom">
+        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X3">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
 
         <section id="faq">
             <h2>FAQ</h2>

@@ -1,6 +1,6 @@
 # ▥ FlexGrid
 
-Create clean, simple and powerful multi-device, mobile first grid layouts via Flexible Boxes. Short, intuitive predefined structure and flexible options system, mixin generators to match any of your needs.
+Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs.
 
 - [Installation](#installation)
     - [Manual](#manual)
@@ -12,6 +12,9 @@ Create clean, simple and powerful multi-device, mobile first grid layouts via Fl
     - [Nesting columns](#nested)
     - [Offsetting columns](#offset)
     - [Reordering columns](#reorder)
+    - [Aligning columns](#alignment)
+        - [Horizontal](#alignmentHorizontal)
+        - [Vertical](#alignmentVertical)
 - [FAQ](#faq)
 
 
@@ -199,6 +202,50 @@ You can change swap blocks position on different devices. No need to duplicate b
         <div class="M3 M--order6">
             <div class="col-content-example">.M3 .M--order1</div>
         </div>
+    </div>
+</div>
+```
+
+### <a name="alignment"></a>Aligning columns
+
+#### <a name="alignmentHorizontal"></a>Horizontal
+
+There is predefined classes for horizontal alignment with <code class="line-sass-class">--start</code>, <code class="line-sass-class">--center</code>, <code class="line-sass-class">--end</code>
+
+```html
+<div class="container">
+    <div class="row X--start">
+        <div class="X3">...</div>
+        <div class="X3">...</div>
+    </div>
+    <div class="row X--center">
+        <div class="X3">...</div>
+        <div class="X3">...</div>
+    </div>
+    <div class="row X--end">
+        <div class="X3">...</div>
+        <div class="X3">...</div>
+    </div>
+</div>
+```
+
+#### <a name="alignmentVertical"></a>Vertical
+
+There is also predefined classes for vertical alignment with <code class="line-sass-class">--top</code>, <code class="line-sass-class">--middle</code>, <code class="line-sass-class">--bottom</code>
+
+```html
+<div class="container">
+    <div class="row X--top">
+        <div class="X3">...</div>
+        <div class="X3">...</div>
+    </div>
+    <div class="row X--middle">
+        <div class="X3">...</div>
+        <div class="X3">...</div>
+    </div>
+    <div class="row X--bottom">
+        <div class="X3">...</div>
+        <div class="X3">...</div>
     </div>
 </div>
 ```
