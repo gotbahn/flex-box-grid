@@ -9,8 +9,9 @@ Create clean, simple and powerful multi-device, mobile first grid layouts via Fl
     - [Basic](#basic)
     - [Media Queries](#mediaQueries)
     - [Mixing columns](#mixed)
-    - [Offsetting columns](#offset)
     - [Nesting columns](#nested)
+    - [Offsetting columns](#offset)
+    - [Reordering columns](#reorder)
 - [FAQ](#faq)
 
 
@@ -170,7 +171,7 @@ Move columns right using <code>--offsetN</code> suffix on grid classes. These wi
 </div>
 ```
 
-### <a name="order"></a>Reordering columns
+### <a name="reorder"></a>Reordering columns
 
 Grid columns order can be changed in any way with <code>--orderN</code> suffix.
 You can change swap blocks position on different devices. No need to duplicate blocks anymore.
