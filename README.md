@@ -182,26 +182,14 @@ You can change swap blocks position on different devices. No need to duplicate b
 ```html
 <div class="container">
     <div class="row">
-        <div class="M3 X--order4">
-            <div class="col-content-example">.X3 .X--order4</div>
-        </div>
-        <div class="M3 X--order1">
-            <div class="col-content-example">.X3 .X--order1</div>
-        </div>
-        <div class="M3 X--order2">
-            <div class="col-content-example">.X3 .X--order2</div>
-        </div>
-        <div class="M3 X--order3">
-            <div class="col-content-example">.X3 .X--order3</div>
-        </div>
+        <div class="M3 X--order4">...</div>
+        <div class="M3 X--order1">...</div>
+        <div class="M3 X--order2">...</div>
+        <div class="M3 X--order3">...</div>
     </div>
     <div class="row">
-        <div class="M6 M--order6">
-            <div class="col-content-example">.M3 .M--order2</div>
-        </div>
-        <div class="M3 M--order6">
-            <div class="col-content-example">.M3 .M--order1</div>
-        </div>
+        <div class="M6 M--order6">...</div>
+        <div class="M3 M--order6">...</div>
     </div>
 </div>
 ```
