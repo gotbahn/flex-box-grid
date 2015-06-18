@@ -1,4 +1,4 @@
-// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 10-06-2015
+// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 18-06-2015
 
 //
 //  Utilities -> Grid
@@ -47,7 +47,7 @@
     max-width: percentage(($_columns / $grid__columns));
 }
 
-@mixin create-X-off(
+@mixin create-X--offset(
     $_columns
 ) {
     margin-left: percentage(($_columns / $grid__columns));
@@ -65,7 +65,7 @@
     }
 }
 
-@mixin create-S-off(
+@mixin create-S--offset(
     $_columns
 ) {
     @media (min-width: $screen__S) {
@@ -85,7 +85,7 @@
     }
 }
 
-@mixin create-M-off(
+@mixin create-M--offset(
     $_columns
 ) {
     @media (min-width: $screen__M) {
@@ -106,7 +106,7 @@
     }
 }
 
-@mixin create-L-off(
+@mixin create-L--offset(
     $_columns
 ) {
     @media (min-width: $screen__L) {
@@ -139,9 +139,14 @@
             max-width: percentage(($index / $grid__columns));
         }
     }
-    @if ($type == off) {
-        .#{$class}#{$index}-off {
+    @if ($type == offset) {
+        .#{$class}--offset#{$index} {
             margin-left: percentage(($index / $grid__columns));
+        }
+    }
+    @if ($type == order) {
+        .#{$class}--order#{$index} {
+            order: $index;
         }
     }
 }
@@ -159,5 +164,6 @@
 // Create grid for specific class
 @mixin create-grid-columns($_class) {
     @include loop-grid-columns($grid__columns, $_class, width);
-    @include loop-grid-columns($grid__columns, $_class, off);
+    @include loop-grid-columns($grid__columns, $_class, offset);
+    @include loop-grid-columns($grid__columns, $_class, order);
 }

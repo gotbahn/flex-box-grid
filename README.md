@@ -126,26 +126,6 @@ Wanna different behavior on multiple devices? Try to mix columns.
 
 You can mix any number of different grid classes
 
-### <a name="offset"></a>Offseting columns
-
-Move columns right using <code>-off</code> suffix on grid classes. These will increase left indent of a column. As example <code>.M2-off</code> moves <code>.M6</code> block over 2 columns.
-
-```html
-<div class="container">
-    <div class="row">
-        <div class="M6 M1-off">...</div>
-        <div class="M5">...</div>
-    </div>
-    <div class="row">
-        <div class="M6 M2-off">...</div>
-    </div>
-    <div class="row">
-        <div class="M4">...</div>
-        <div class="M4 M4-off">...</div>
-    </div>
-</div>
-```
-
 ### <a name="nested"></a>Nesting columns
 
 Grid columns can be nested one into another.
@@ -165,6 +145,58 @@ Grid columns can be nested one into another.
                 <div class="M4">...</div>
                 <div class="M4">...</div>
             </div>
+        </div>
+    </div>
+</div>
+```
+
+### <a name="offset"></a>Offseting columns
+
+Move columns right using <code>--offsetN</code> suffix on grid classes. These will increase left indent of a column. As example <code>.M--offset2</code> moves <code>.M6</code> block over 2 columns.
+
+```html
+<div class="container">
+    <div class="row">
+        <div class="M6 M--offset1">...</div>
+        <div class="M5">...</div>
+    </div>
+    <div class="row">
+        <div class="M6 M--offset2">...</div>
+    </div>
+    <div class="row">
+        <div class="M4">...</div>
+        <div class="M4 M--offset4">...</div>
+    </div>
+</div>
+```
+
+### <a name="order"></a>Reordering columns
+
+Grid columns order can be changed in any way with <code>--orderN</code> suffix.
+You can change swap blocks position on different devices. No need to duplicate blocks anymore.
+
+```html
+<div class="container">
+    <div class="row">
+        <div class="M3 X--order4">
+            <div class="col-content-example">.X3 .X--order4</div>
+        </div>
+        <div class="M3 X--order1">
+            <div class="col-content-example">.X3 .X--order1</div>
+        </div>
+        <div class="M3 X--order2">
+            <div class="col-content-example">.X3 .X--order2</div>
+        </div>
+        <div class="M3 X--order3">
+            <div class="col-content-example">.X3 .X--order3</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="M6 M--order6">
+            <div class="col-content-example">.M3 .M--order2</div>
+        </div>
+        <div class="M3 M--order6">
+            <div class="col-content-example">.M3 .M--order1</div>
         </div>
     </div>
 </div>
