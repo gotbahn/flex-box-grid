@@ -8,13 +8,17 @@ Create clean, simple and powerful multi-device, responsive, mobile first grid la
 - [Demo & Documentation](#documentation)
     - [Basic](#basic)
     - [Media Queries](#mediaQueries)
-    - [Mixing columns](#mixed)
-    - [Nesting columns](#nested)
-    - [Offsetting columns](#offset)
-    - [Reordering columns](#reorder)
-    - [Aligning columns](#alignment)
+    - [Mixing](#mixed)
+    - [Nesting](#nested)
+    - [Offsetting](#offset)
+    - [Reordering](#reorder)
+    - [Reversing](#reverse)
+    - [Aligning](#alignment)
         - [Horizontal](#alignmentHorizontal)
         - [Vertical](#alignmentVertical)
+    - [Distribution](#distribution)
+        - [Between](#distributionBetween)
+        - [Around](#distributionAround)
 - [FAQ](#faq)
 
 
@@ -63,7 +67,7 @@ By default FlexGrid have 12 columns.
 - Content should be placed within columns with classes <code>.X-n, .S-n, .M-n, .L-n, .XL-n</code> where n is columns number from 1 to 12 (by default).
 - Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>, by default it's 10px.
 
-<p align="center"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-L.jpg" width="307px" alt="Laptop"></p>
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -80,16 +84,16 @@ By default FlexGrid have 12 columns.
 
 Media queries is a basis of any Responsive Grid System. To change column behavior each media query breakpoint connected with column class name with simply recognizing size name: <code>X, S, M, L, XL</code>. 
 
-As example column with <code>.M6</code> class will be halfwidth until the window width becomes equal to 768px or less matching <code>$screen__M</code>.
+As example column with <code>.M6</code> class will be halfwidth until the window width becomes equal to 768px or less matching <code>$screen--M</code>.
 
 <img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/media-queries.png" width="500" alt="Areas">
 
 Predefined break points:
 ```scss
-$break__S:  480px;
-$break__M:  768px;
-$break__L:  1024px;
-$break__XL: 1440px;
+$break--S:  480px;
+$break--M:  768px;
+$break--L:  1024px;
+$break--XL: 1440px;
 ```
 
 To change column content behavior...
@@ -105,7 +109,7 @@ To change column content behavior...
 
 ...use appropriate media query
 ```scss
-@media (min-width: $screen__M) {
+@media (min-width: $screen--M) {
     .foo {
         ...
     }
@@ -115,6 +119,8 @@ To change column content behavior...
 ### <a name="mixed"></a>Mixing columns
 
 Wanna different behavior on multiple devices? Try to mix columns.
+
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/mixin-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/mixin-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -135,6 +141,8 @@ You can mix any number of different grid classes
 ### <a name="nested"></a>Nesting columns
 
 Grid columns can be nested one into another.
+
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/nesting-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/nesting-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -160,6 +168,8 @@ Grid columns can be nested one into another.
 
 Move columns right using <code>--offsetN</code> suffix on grid classes. These will increase left indent of a column. As example <code>.M--offset2</code> moves <code>.M6</code> block over 2 columns.
 
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/offsetting-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/offsetting-L.jpg" width="307px" alt="Laptop">
+
 ```html
 <div class="container">
     <div class="row">
@@ -181,6 +191,9 @@ Move columns right using <code>--offsetN</code> suffix on grid classes. These wi
 Grid columns order can be changed in any way with <code>--orderN</code> suffix.
 You can change swap blocks position on different devices. No need to duplicate blocks anymore.
 
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/reordering-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/reordering-L.jpg" width="307px" alt="Laptop">
+
 ```html
 <div class="container">
     <div class="row">
@@ -196,11 +209,41 @@ You can change swap blocks position on different devices. No need to duplicate b
 </div>
 ```
 
+### <a name="reverse"></a>Reversing columns
+
+Well, hard to say what for, but columns can be also reversed with <code>N--reverse</code>
+
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/reversing-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/reversing-L.jpg" width="307px" alt="Laptop">
+
+```html
+<div class="container">
+    <div class="row X--reverse">
+        <div class="M1">1</div>
+        <div class="M1">2</div>
+        <div class="M1">3</div>
+        <div class="M1">4</div>
+        <div class="M1">5</div>
+        <div class="M1">6</div>
+        <div class="M1">7</div>
+        <div class="M1">8</div>
+        <div class="M1">9</div>
+        <div class="M1">10</div>
+        <div class="M1">11</div>
+        <div class="M1">12</div>
+    </div>
+</div>
+```
+
+
 ### <a name="alignment"></a>Aligning columns
 
 #### <a name="alignmentHorizontal"></a>Horizontal
 
-There is predefined classes for horizontal alignment with <code class="line-sass-class">--start</code>, <code class="line-sass-class">--center</code>, <code class="line-sass-class">--end</code>
+There is predefined classes for horizontal alignment with <code class="line-sass-class">--start</code>, <code class="line-sass-class">--center</code>, <code class="line-sass-class">--end</code>.
+
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/aligning-horizontal-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/aligning-horizontal-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -221,7 +264,11 @@ There is predefined classes for horizontal alignment with <code class="line-sass
 
 #### <a name="alignmentVertical"></a>Vertical
 
-There is also predefined classes for vertical alignment with <code class="line-sass-class">--top</code>, <code class="line-sass-class">--middle</code>, <code class="line-sass-class">--bottom</code>
+There is also predefined classes for vertical alignment with <code class="line-sass-class">--top</code>, <code class="line-sass-class">--middle</code>, <code class="line-sass-class">--bottom</code>.
+Also you can do full height stretch with <code>N--stretch</code>.
+
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/aligning-vertical-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/aligning-vertical-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -236,6 +283,46 @@ There is also predefined classes for vertical alignment with <code class="line-s
     <div class="row X--bottom">
         <div class="X3">...</div>
         <div class="X3">...</div>
+    </div>
+    <div class="row X--stretch">
+        <div class="X6">...</div>
+        <div class="X6">...</div>
+    </div>
+</div>
+```
+
+### <a name="distribution"></a>Distribution column space
+
+#### <a name="distributionBetween"></a>Between
+
+Another helpful feature can be distribution columns space between or around columns.
+
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/distribution-between-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/distribution-between-L.jpg" width="307px" alt="Laptop">
+
+```html
+<div class="container">
+    <div class="row X--between">
+        <div class="X2">...</div>
+        <div class="X2">...</div>
+        <div class="X2">...</div>
+        <div class="X2">...</div>
+    </div>
+</div>
+```
+
+#### <a name="distributionAround"></a>Around
+
+<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/distribution-around-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/distribution-around-L.jpg" width="307px" alt="Laptop">
+
+```html
+<div class="container">
+    <div class="row X--around">
+        <div class="X2">...</div>
+        <div class="X2">...</div>
+        <div class="X2">...</div>
+        <div class="X2">...</div>
     </div>
 </div>
 ```

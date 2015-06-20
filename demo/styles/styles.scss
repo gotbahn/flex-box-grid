@@ -19,7 +19,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: $color__gray-dark;
+    color: $color--gray-dark;
 }
 
 h1, h2, h3 {
@@ -79,9 +79,9 @@ p {
 }
 
 a {
-    color: $color__blue;
+    color: $color--blue;
     &:hover {
-        color: darken($color__blue, 5%);
+        color: darken($color--blue, 5%);
     }
 }
 
@@ -100,7 +100,7 @@ img {
     margin-bottom: 2em;
     margin-top: 2em;
     text-align: center;
-    @media (min-width: $screen__M) {
+    @media (min-width: $screen--M) {
         text-align: right;
         margin-bottom: 10px;
         margin-top: 13px;
@@ -112,11 +112,120 @@ img {
     margin-bottom: .25em;
     font-size: 3em;
     text-align: center;
-    @media (min-width: $screen__M) {
+    white-space: nowrap;
+    letter-spacing: .025em;
+    @media (min-width: $screen--M) {
         text-align: left;
     }
     .accent-text {
-        color: $color__purple;
+        color: $color--purple;
+    }
+}
+
+.header {
+    position: relative;
+}
+
+.flexgrid-logo {
+    display: inline-block;
+    opacity: .1;
+    position: absolute;
+    font-size: 3em;
+    left: 50%;
+    top: -22px;
+    transform: rotate(-38deg) scale(8) translate(-14%, 0);
+    &:before {
+        @extend %icon;
+        content: $icon-mobile;
+    }
+    @media (min-width: $screen--M) {
+        left: 65px;
+        top: 19px;
+        transform: rotate(-10deg) scale(6) translate(0, 0);
+        &:before {
+            content: $icon-desktop;
+            font-size: .85em;
+        }
+    }
+}
+
+.flexgrid-logo__item {
+
+    $_screen__width: 34px;
+    $_flexgrid-logo__item__height: 2px;
+    $_flexgrid-logo__item__width4: 6px;
+    $_flexgrid-logo__item__width6: 14px;
+    $_flexgrid-logo__item__indent-screen-top: 23px;
+    $_flexgrid-logo__item__indent-screen-left: 3px;
+    $_flexgrid-logo__item__indent-gutter-left: 2px;
+    $_flexgrid-logo__item__indent-gutter-top: 2px;
+
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: $_flexgrid-logo__item__height;
+    background-color: $color--purple;
+    top: $_flexgrid-logo__item__indent-screen-top;
+    left: $_flexgrid-logo__item__indent-screen-left;
+    &:nth-child(2) {
+        top: $_flexgrid-logo__item__height + $_flexgrid-logo__item__indent-screen-top + $_flexgrid-logo__item__indent-gutter-left;
+    }
+    &:nth-child(3) {
+        top: $_flexgrid-logo__item__height * 2 + $_flexgrid-logo__item__indent-screen-top + $_flexgrid-logo__item__indent-gutter-top + $_flexgrid-logo__item__indent-gutter-left;
+    }
+    &:nth-child(4) {
+        top: $_flexgrid-logo__item__height * 3 + $_flexgrid-logo__item__indent-screen-top + $_flexgrid-logo__item__indent-gutter-top * 2 + $_flexgrid-logo__item__indent-gutter-left;
+    }
+    @media (min-width: $screen--M) {
+
+        $_flexgrid-logo__item__indent-screen-top: 19px;
+        $_flexgrid-logo__item__indent-screen-left: 4px;
+
+        width: $_flexgrid-logo__item__width6;
+        top: $_flexgrid-logo__item__indent-screen-top;
+        left: $_flexgrid-logo__item__indent-screen-left;
+
+        &:nth-child(2) {
+            top: $_flexgrid-logo__item__indent-screen-top;
+        }
+
+        &:nth-child(10),
+        &:nth-child(2) {
+            left: $_flexgrid-logo__item__indent-screen-left + $_flexgrid-logo__item__width6 + $_flexgrid-logo__item__indent-gutter-left;
+        }
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6) {
+            top: $_flexgrid-logo__item__height + $_flexgrid-logo__item__indent-screen-top + $_flexgrid-logo__item__indent-gutter-left;
+            width: $_flexgrid-logo__item__width4;
+        }
+        &:nth-child(4) {
+            left: $_flexgrid-logo__item__indent-screen-left + $_flexgrid-logo__item__width4 + $_flexgrid-logo__item__indent-gutter-left;
+        }
+        &:nth-child(5) {
+            left: $_flexgrid-logo__item__indent-screen-left + $_flexgrid-logo__item__width4 * 2 + $_flexgrid-logo__item__indent-gutter-left * 2;
+        }
+        &:nth-child(6) {
+            left: $_flexgrid-logo__item__indent-screen-left + $_flexgrid-logo__item__width4 * 3 + $_flexgrid-logo__item__indent-gutter-left * 3;
+        }
+        &:nth-child(7),
+        &:nth-child(8) {
+            top: $_flexgrid-logo__item__height * 2 + $_flexgrid-logo__item__indent-screen-top + $_flexgrid-logo__item__indent-gutter-top + $_flexgrid-logo__item__indent-gutter-left;
+        }
+        &:nth-child(7) {
+            width: $_flexgrid-logo__item__width4;
+        }
+        &:nth-child(8) {
+            width: 22px;
+            left: $_flexgrid-logo__item__width4 + $_flexgrid-logo__item__indent-gutter-left + $_flexgrid-logo__item__indent-screen-left;
+        }
+        &:nth-child(9),
+        &:nth-child(10) {
+            top: $_flexgrid-logo__item__height * 3 + $_flexgrid-logo__item__indent-screen-top + $_flexgrid-logo__item__indent-gutter-top * 2 + $_flexgrid-logo__item__indent-gutter-left;
+            width: $_flexgrid-logo__item__width6;
+
+        }
     }
 }
 
@@ -132,7 +241,7 @@ img {
 }
 
 .row-example {
-    background-color: lighten($color__purple, 30%);
+    background-color: lighten($color--purple, 30%);
     margin-bottom: 3px;
     small {
         display: inline-block;
@@ -191,10 +300,11 @@ img {
 
 .btn {
     display: inline-block;
-    border: 1px solid $color__gray-dark;
+    background-color: #fff;
+    border: 1px solid $color--gray-dark;
     border-radius: 3px;
     padding: .5em 15px .5em 38px;
-    color: $color__gray-dark;
+    color: $color--gray-dark;
     text-decoration: none;
     transition-property: color, border-color;
     transition-timing-function: linear;
@@ -204,8 +314,8 @@ img {
     font-size: 15px;
     position: relative;
     &:hover {
-        border-color: $color__blue;
-        color: $color__blue;
+        border-color: $color--blue;
+        color: $color--blue;
     }
     &:active {
         transform: scale(.95);
@@ -270,18 +380,22 @@ pre[class*="language-"] {
 
 .nav {
     display: none;
-    @media (min-width: $screen__M) {
+    padding-top: 21px;
+    font-weight: 300;
+    font-size: 16px;
+    @media (min-width: $screen--M) {
         position: fixed;
         display: block;
     }
     h4 {
         margin-top: 22px;
+        display: none;
     }
     ul {
         li {
             &:hover {
                 &:before {
-                    color: $color__blue;
+                    color: $color--blue;
                 }
             }
         }
@@ -299,7 +413,7 @@ pre[class*="language-"] {
         }
     }
     a {
-        color: $color__gray-dark;
+        color: $color--gray-dark;
         text-decoration: none;
     }
 }

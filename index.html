@@ -67,13 +67,30 @@
                         </li>
                     </ul>
                 </nav>
+
+                <div class="device"></div>
+
             </div>
             <div class="M9 M--order1">
         <header
             id="header"
-            class="row">
+            class="header row">
+            <span class="flexgrid-logo">
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+            </span>
             <div class="M4">
-                <h1 class="page-title"><span class="accent-text">Flex</span>Grid</h1>
+                <h1 class="page-title">
+                    <span class="accent-text">Flex</span>Grid
+                </h1>
             </div>
             <div class="M8">
                 <div class="header-actions">
@@ -214,7 +231,7 @@
                 breakpoint connected with column class name with simply recognizing size name: <span class="line-sass-class">X, S, M, L, XL</span>.
                 <br/>
                 <br/>
-                As example column with <span class="line-sass-class">.M6</span> class will be halfwidth until the window width becomes equal to 768px or less matching <span class="line-sass-variable">$screen__M</span>.
+                As example column with <span class="line-sass-class">.M6</span> class will be halfwidth until the window width becomes equal to 768px or less matching <span class="line-sass-variable">$screen--M</span>.
             </p>
             <div class="row">
                 <div class="M5">
@@ -227,10 +244,10 @@
                 <div class="M4 M--offset1">
                     <p class="code-block-description">Predefined break points:</p>
 <pre class="language-scss"><code>
-    $break__S:  480px;
-    $break__M:  768px;
-    $break__L:  1024px;
-    $break__XL: 1440px;
+    $break--S:  480px;
+    $break--M:  768px;
+    $break--L:  1024px;
+    $break--XL: 1440px;
 </code></pre>
                 </div>
             </div>
@@ -255,7 +272,7 @@
                         ...use appropriate media query
                     </p>
 <pre class="language-scss"><code>
-@media (min-width: $screen__M) {
+@media (min-width: $screen--M) {
     .foo {
         ...
     }

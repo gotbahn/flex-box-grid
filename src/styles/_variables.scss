@@ -5,18 +5,18 @@
 $grid__columns: 12;
 $grid__gutter:  10px;
 
-$name__X: X;
-$name__S: S;
-$name__M: M;
-$name__L: L;
-$name__XL: XL;
+$name--X: X;
+$name--S: S;
+$name--M: M;
+$name--L: L;
+$name--XL: XL;
 
-$break__S:  480px;
-$break__M:  768px;
-$break__L:  1024px;
-$break__XL: 1440px;
+$break--S:  480px;
+$break--M:  768px;
+$break--L:  1024px;
+$break--XL: 1440px;
 
-$screen__S:  $break__S + 1;
-$screen__M:  $break__M + 1;
-$screen__L:  $break__L + 1;
-$screen__XL: $break__XL + 1;
+$screen--S:  $break--S + 1;
+$screen--M:  $break--M + 1;
+$screen--L:  $break--L + 1;
+$screen--XL: $break--XL + 1;

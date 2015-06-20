@@ -1,4 +1,4 @@
-// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 19-06-2015
+// FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 20-06-2015
 
 //
 //  Grid
@@ -13,14 +13,6 @@
     @include init-row();
 }
 
-.row-reverse {
-    flex-direction: row-reverse;
-}
-
-.col-reverse {
-    flex-direction: column-reverse;
-}
-
 //  Make all grid columns
 //  ---------------------------------------------
 
@@ -29,43 +21,32 @@
 //  Columns X
 //  ---------------------------------------------
 
-@include create-grid-columns($name__X);
+@include create-grid-columns($name--X);
 
 //  Columns S
 //  ---------------------------------------------
 
-@media (min-width: $screen__S) {
-    @include create-grid-columns($name__S);
+@media (min-width: $screen--S) {
+    @include create-grid-columns($name--S);
 }
 
 //  Columns M
 //  ---------------------------------------------
 
-@media (min-width: $screen__M) {
-    @include create-grid-columns($name__M);
+@media (min-width: $screen--M) {
+    @include create-grid-columns($name--M);
 }
 
 //  Columns L
 //  ---------------------------------------------
 
-@media (min-width: $screen__L) {
-    @include create-grid-columns($name__L);
+@media (min-width: $screen--L) {
+    @include create-grid-columns($name--L);
 }
 
 //  Columns XL
 //  ---------------------------------------------
 
-@media (min-width: $screen__XL) {
-    @include create-grid-columns($name__XL);
-}
-
-//  Additional
-//  ---------------------------------------------
-
-.col-around {
-    justify-content: space-around;
-}
-
-.col-between {
-    justify-content: space-between;
+@media (min-width: $screen--XL) {
+    @include create-grid-columns($name--XL);
 }

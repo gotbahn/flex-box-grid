@@ -1,3 +1,5 @@
+/*! FlexGrid - Flexible Boxes Grid System by Bogdan Plieshka, 20-06-2015 */
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -5,66 +7,100 @@
   padding-right: 5px; }
 
 .row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   margin-left: -5px;
   margin-right: -5px; }
 
 .X1, .S1, .M1, .L1, .XL1, .X2, .S2, .M2, .L2, .XL2, .X3, .S3, .M3, .L3, .XL3, .X4, .S4, .M4, .L4, .XL4, .X5, .S5, .M5, .L5, .XL5, .X6, .S6, .M6, .L6, .XL6, .X7, .S7, .M7, .L7, .XL7, .X8, .S8, .M8, .L8, .XL8, .X9, .S9, .M9, .L9, .XL9, .X10, .S10, .M10, .L10, .XL10, .X11, .S11, .M11, .L11, .XL11, .X12, .S12, .M12, .L12, .XL12 {
-  flex: 0 0 100%;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
   max-width: 100%;
   min-height: 1px;
   padding-left: 5px;
   padding-right: 5px; }
 
 .X1 {
-  flex-basis: 8.333%;
+  -webkit-flex-basis: 8.333%;
+      -ms-flex-preferred-size: 8.333%;
+          flex-basis: 8.333%;
   max-width: 8.333%; }
 
 .X2 {
-  flex-basis: 16.667%;
+  -webkit-flex-basis: 16.667%;
+      -ms-flex-preferred-size: 16.667%;
+          flex-basis: 16.667%;
   max-width: 16.667%; }
 
 .X3 {
-  flex-basis: 25%;
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
   max-width: 25%; }
 
 .X4 {
-  flex-basis: 33.333%;
+  -webkit-flex-basis: 33.333%;
+      -ms-flex-preferred-size: 33.333%;
+          flex-basis: 33.333%;
   max-width: 33.333%; }
 
 .X5 {
-  flex-basis: 41.667%;
+  -webkit-flex-basis: 41.667%;
+      -ms-flex-preferred-size: 41.667%;
+          flex-basis: 41.667%;
   max-width: 41.667%; }
 
 .X6 {
-  flex-basis: 50%;
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
   max-width: 50%; }
 
 .X7 {
-  flex-basis: 58.333%;
+  -webkit-flex-basis: 58.333%;
+      -ms-flex-preferred-size: 58.333%;
+          flex-basis: 58.333%;
   max-width: 58.333%; }
 
 .X8 {
-  flex-basis: 66.667%;
+  -webkit-flex-basis: 66.667%;
+      -ms-flex-preferred-size: 66.667%;
+          flex-basis: 66.667%;
   max-width: 66.667%; }
 
 .X9 {
-  flex-basis: 75%;
+  -webkit-flex-basis: 75%;
+      -ms-flex-preferred-size: 75%;
+          flex-basis: 75%;
   max-width: 75%; }
 
 .X10 {
-  flex-basis: 83.333%;
+  -webkit-flex-basis: 83.333%;
+      -ms-flex-preferred-size: 83.333%;
+          flex-basis: 83.333%;
   max-width: 83.333%; }
 
 .X11 {
-  flex-basis: 91.667%;
+  -webkit-flex-basis: 91.667%;
+      -ms-flex-preferred-size: 91.667%;
+          flex-basis: 91.667%;
   max-width: 91.667%; }
 
 .X12 {
-  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
   max-width: 100%; }
 
 .X--offset0 {
@@ -107,110 +143,180 @@
   margin-left: 100%; }
 
 .X--order0 {
-  order: 0; }
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0; }
 
 .X--order1 {
-  order: 1; }
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1; }
 
 .X--order2 {
-  order: 2; }
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2; }
 
 .X--order3 {
-  order: 3; }
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3; }
 
 .X--order4 {
-  order: 4; }
+  -webkit-order: 4;
+      -ms-flex-order: 4;
+          order: 4; }
 
 .X--order5 {
-  order: 5; }
+  -webkit-order: 5;
+      -ms-flex-order: 5;
+          order: 5; }
 
 .X--order6 {
-  order: 6; }
+  -webkit-order: 6;
+      -ms-flex-order: 6;
+          order: 6; }
 
 .X--order7 {
-  order: 7; }
+  -webkit-order: 7;
+      -ms-flex-order: 7;
+          order: 7; }
 
 .X--order8 {
-  order: 8; }
+  -webkit-order: 8;
+      -ms-flex-order: 8;
+          order: 8; }
 
 .X--order9 {
-  order: 9; }
+  -webkit-order: 9;
+      -ms-flex-order: 9;
+          order: 9; }
 
 .X--order10 {
-  order: 10; }
+  -webkit-order: 10;
+      -ms-flex-order: 10;
+          order: 10; }
 
 .X--order11 {
-  order: 11; }
+  -webkit-order: 11;
+      -ms-flex-order: 11;
+          order: 11; }
 
 .X--order12 {
-  order: 12; }
+  -webkit-order: 12;
+      -ms-flex-order: 12;
+          order: 12; }
 
 .X--start {
-  justify-content: flex-start; }
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
 
 .X--center {
-  justify-content: center; }
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .X--end {
-  justify-content: flex-end; }
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .X--top {
-  align-items: flex-start; }
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .X--middle {
-  align-items: center; }
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .X--bottom {
-  align-items: flex-end; }
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 .X--stretch {
-  align-items: stretch; }
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
 
 .X--reverse {
-  flex-direction: row-reverse; }
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
 
 .X--around {
-  justify-content: space-around; }
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
 
 .X--between {
-  justify-content: space-between; }
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 @media (min-width: 481px) {
   .S1 {
-    flex-basis: 8.333%;
+    -webkit-flex-basis: 8.333%;
+        -ms-flex-preferred-size: 8.333%;
+            flex-basis: 8.333%;
     max-width: 8.333%; }
   .S2 {
-    flex-basis: 16.667%;
+    -webkit-flex-basis: 16.667%;
+        -ms-flex-preferred-size: 16.667%;
+            flex-basis: 16.667%;
     max-width: 16.667%; }
   .S3 {
-    flex-basis: 25%;
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
     max-width: 25%; }
   .S4 {
-    flex-basis: 33.333%;
+    -webkit-flex-basis: 33.333%;
+        -ms-flex-preferred-size: 33.333%;
+            flex-basis: 33.333%;
     max-width: 33.333%; }
   .S5 {
-    flex-basis: 41.667%;
+    -webkit-flex-basis: 41.667%;
+        -ms-flex-preferred-size: 41.667%;
+            flex-basis: 41.667%;
     max-width: 41.667%; }
   .S6 {
-    flex-basis: 50%;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
     max-width: 50%; }
   .S7 {
-    flex-basis: 58.333%;
+    -webkit-flex-basis: 58.333%;
+        -ms-flex-preferred-size: 58.333%;
+            flex-basis: 58.333%;
     max-width: 58.333%; }
   .S8 {
-    flex-basis: 66.667%;
+    -webkit-flex-basis: 66.667%;
+        -ms-flex-preferred-size: 66.667%;
+            flex-basis: 66.667%;
     max-width: 66.667%; }
   .S9 {
-    flex-basis: 75%;
+    -webkit-flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
     max-width: 75%; }
   .S10 {
-    flex-basis: 83.333%;
+    -webkit-flex-basis: 83.333%;
+        -ms-flex-preferred-size: 83.333%;
+            flex-basis: 83.333%;
     max-width: 83.333%; }
   .S11 {
-    flex-basis: 91.667%;
+    -webkit-flex-basis: 91.667%;
+        -ms-flex-preferred-size: 91.667%;
+            flex-basis: 91.667%;
     max-width: 91.667%; }
   .S12 {
-    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     max-width: 100%; }
   .S--offset0 {
     margin-left: 0%; }
@@ -239,88 +345,158 @@
   .S--offset12 {
     margin-left: 100%; }
   .S--order0 {
-    order: 0; }
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0; }
   .S--order1 {
-    order: 1; }
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
   .S--order2 {
-    order: 2; }
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
   .S--order3 {
-    order: 3; }
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
   .S--order4 {
-    order: 4; }
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
   .S--order5 {
-    order: 5; }
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
   .S--order6 {
-    order: 6; }
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6; }
   .S--order7 {
-    order: 7; }
+    -webkit-order: 7;
+        -ms-flex-order: 7;
+            order: 7; }
   .S--order8 {
-    order: 8; }
+    -webkit-order: 8;
+        -ms-flex-order: 8;
+            order: 8; }
   .S--order9 {
-    order: 9; }
+    -webkit-order: 9;
+        -ms-flex-order: 9;
+            order: 9; }
   .S--order10 {
-    order: 10; }
+    -webkit-order: 10;
+        -ms-flex-order: 10;
+            order: 10; }
   .S--order11 {
-    order: 11; }
+    -webkit-order: 11;
+        -ms-flex-order: 11;
+            order: 11; }
   .S--order12 {
-    order: 12; }
+    -webkit-order: 12;
+        -ms-flex-order: 12;
+            order: 12; }
   .S--start {
-    justify-content: flex-start; }
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .S--center {
-    justify-content: center; }
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .S--end {
-    justify-content: flex-end; }
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   .S--top {
-    align-items: flex-start; }
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .S--middle {
-    align-items: center; }
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .S--bottom {
-    align-items: flex-end; }
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
   .S--stretch {
-    align-items: stretch; }
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .S--reverse {
-    flex-direction: row-reverse; }
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
   .S--around {
-    justify-content: space-around; }
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
   .S--between {
-    justify-content: space-between; } }
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 @media (min-width: 769px) {
   .M1 {
-    flex-basis: 8.333%;
+    -webkit-flex-basis: 8.333%;
+        -ms-flex-preferred-size: 8.333%;
+            flex-basis: 8.333%;
     max-width: 8.333%; }
   .M2 {
-    flex-basis: 16.667%;
+    -webkit-flex-basis: 16.667%;
+        -ms-flex-preferred-size: 16.667%;
+            flex-basis: 16.667%;
     max-width: 16.667%; }
   .M3 {
-    flex-basis: 25%;
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
     max-width: 25%; }
   .M4 {
-    flex-basis: 33.333%;
+    -webkit-flex-basis: 33.333%;
+        -ms-flex-preferred-size: 33.333%;
+            flex-basis: 33.333%;
     max-width: 33.333%; }
   .M5 {
-    flex-basis: 41.667%;
+    -webkit-flex-basis: 41.667%;
+        -ms-flex-preferred-size: 41.667%;
+            flex-basis: 41.667%;
     max-width: 41.667%; }
   .M6 {
-    flex-basis: 50%;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
     max-width: 50%; }
   .M7 {
-    flex-basis: 58.333%;
+    -webkit-flex-basis: 58.333%;
+        -ms-flex-preferred-size: 58.333%;
+            flex-basis: 58.333%;
     max-width: 58.333%; }
   .M8 {
-    flex-basis: 66.667%;
+    -webkit-flex-basis: 66.667%;
+        -ms-flex-preferred-size: 66.667%;
+            flex-basis: 66.667%;
     max-width: 66.667%; }
   .M9 {
-    flex-basis: 75%;
+    -webkit-flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
     max-width: 75%; }
   .M10 {
-    flex-basis: 83.333%;
+    -webkit-flex-basis: 83.333%;
+        -ms-flex-preferred-size: 83.333%;
+            flex-basis: 83.333%;
     max-width: 83.333%; }
   .M11 {
-    flex-basis: 91.667%;
+    -webkit-flex-basis: 91.667%;
+        -ms-flex-preferred-size: 91.667%;
+            flex-basis: 91.667%;
     max-width: 91.667%; }
   .M12 {
-    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     max-width: 100%; }
   .M--offset0 {
     margin-left: 0%; }
@@ -349,88 +525,158 @@
   .M--offset12 {
     margin-left: 100%; }
   .M--order0 {
-    order: 0; }
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0; }
   .M--order1 {
-    order: 1; }
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
   .M--order2 {
-    order: 2; }
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
   .M--order3 {
-    order: 3; }
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
   .M--order4 {
-    order: 4; }
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
   .M--order5 {
-    order: 5; }
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
   .M--order6 {
-    order: 6; }
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6; }
   .M--order7 {
-    order: 7; }
+    -webkit-order: 7;
+        -ms-flex-order: 7;
+            order: 7; }
   .M--order8 {
-    order: 8; }
+    -webkit-order: 8;
+        -ms-flex-order: 8;
+            order: 8; }
   .M--order9 {
-    order: 9; }
+    -webkit-order: 9;
+        -ms-flex-order: 9;
+            order: 9; }
   .M--order10 {
-    order: 10; }
+    -webkit-order: 10;
+        -ms-flex-order: 10;
+            order: 10; }
   .M--order11 {
-    order: 11; }
+    -webkit-order: 11;
+        -ms-flex-order: 11;
+            order: 11; }
   .M--order12 {
-    order: 12; }
+    -webkit-order: 12;
+        -ms-flex-order: 12;
+            order: 12; }
   .M--start {
-    justify-content: flex-start; }
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .M--center {
-    justify-content: center; }
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .M--end {
-    justify-content: flex-end; }
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   .M--top {
-    align-items: flex-start; }
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .M--middle {
-    align-items: center; }
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .M--bottom {
-    align-items: flex-end; }
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
   .M--stretch {
-    align-items: stretch; }
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .M--reverse {
-    flex-direction: row-reverse; }
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
   .M--around {
-    justify-content: space-around; }
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
   .M--between {
-    justify-content: space-between; } }
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 @media (min-width: 1025px) {
   .L1 {
-    flex-basis: 8.333%;
+    -webkit-flex-basis: 8.333%;
+        -ms-flex-preferred-size: 8.333%;
+            flex-basis: 8.333%;
     max-width: 8.333%; }
   .L2 {
-    flex-basis: 16.667%;
+    -webkit-flex-basis: 16.667%;
+        -ms-flex-preferred-size: 16.667%;
+            flex-basis: 16.667%;
     max-width: 16.667%; }
   .L3 {
-    flex-basis: 25%;
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
     max-width: 25%; }
   .L4 {
-    flex-basis: 33.333%;
+    -webkit-flex-basis: 33.333%;
+        -ms-flex-preferred-size: 33.333%;
+            flex-basis: 33.333%;
     max-width: 33.333%; }
   .L5 {
-    flex-basis: 41.667%;
+    -webkit-flex-basis: 41.667%;
+        -ms-flex-preferred-size: 41.667%;
+            flex-basis: 41.667%;
     max-width: 41.667%; }
   .L6 {
-    flex-basis: 50%;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
     max-width: 50%; }
   .L7 {
-    flex-basis: 58.333%;
+    -webkit-flex-basis: 58.333%;
+        -ms-flex-preferred-size: 58.333%;
+            flex-basis: 58.333%;
     max-width: 58.333%; }
   .L8 {
-    flex-basis: 66.667%;
+    -webkit-flex-basis: 66.667%;
+        -ms-flex-preferred-size: 66.667%;
+            flex-basis: 66.667%;
     max-width: 66.667%; }
   .L9 {
-    flex-basis: 75%;
+    -webkit-flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
     max-width: 75%; }
   .L10 {
-    flex-basis: 83.333%;
+    -webkit-flex-basis: 83.333%;
+        -ms-flex-preferred-size: 83.333%;
+            flex-basis: 83.333%;
     max-width: 83.333%; }
   .L11 {
-    flex-basis: 91.667%;
+    -webkit-flex-basis: 91.667%;
+        -ms-flex-preferred-size: 91.667%;
+            flex-basis: 91.667%;
     max-width: 91.667%; }
   .L12 {
-    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     max-width: 100%; }
   .L--offset0 {
     margin-left: 0%; }
@@ -459,88 +705,158 @@
   .L--offset12 {
     margin-left: 100%; }
   .L--order0 {
-    order: 0; }
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0; }
   .L--order1 {
-    order: 1; }
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
   .L--order2 {
-    order: 2; }
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
   .L--order3 {
-    order: 3; }
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
   .L--order4 {
-    order: 4; }
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
   .L--order5 {
-    order: 5; }
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
   .L--order6 {
-    order: 6; }
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6; }
   .L--order7 {
-    order: 7; }
+    -webkit-order: 7;
+        -ms-flex-order: 7;
+            order: 7; }
   .L--order8 {
-    order: 8; }
+    -webkit-order: 8;
+        -ms-flex-order: 8;
+            order: 8; }
   .L--order9 {
-    order: 9; }
+    -webkit-order: 9;
+        -ms-flex-order: 9;
+            order: 9; }
   .L--order10 {
-    order: 10; }
+    -webkit-order: 10;
+        -ms-flex-order: 10;
+            order: 10; }
   .L--order11 {
-    order: 11; }
+    -webkit-order: 11;
+        -ms-flex-order: 11;
+            order: 11; }
   .L--order12 {
-    order: 12; }
+    -webkit-order: 12;
+        -ms-flex-order: 12;
+            order: 12; }
   .L--start {
-    justify-content: flex-start; }
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .L--center {
-    justify-content: center; }
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .L--end {
-    justify-content: flex-end; }
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   .L--top {
-    align-items: flex-start; }
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .L--middle {
-    align-items: center; }
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .L--bottom {
-    align-items: flex-end; }
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
   .L--stretch {
-    align-items: stretch; }
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .L--reverse {
-    flex-direction: row-reverse; }
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
   .L--around {
-    justify-content: space-around; }
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
   .L--between {
-    justify-content: space-between; } }
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 
 @media (min-width: 1441px) {
   .XL1 {
-    flex-basis: 8.333%;
+    -webkit-flex-basis: 8.333%;
+        -ms-flex-preferred-size: 8.333%;
+            flex-basis: 8.333%;
     max-width: 8.333%; }
   .XL2 {
-    flex-basis: 16.667%;
+    -webkit-flex-basis: 16.667%;
+        -ms-flex-preferred-size: 16.667%;
+            flex-basis: 16.667%;
     max-width: 16.667%; }
   .XL3 {
-    flex-basis: 25%;
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
     max-width: 25%; }
   .XL4 {
-    flex-basis: 33.333%;
+    -webkit-flex-basis: 33.333%;
+        -ms-flex-preferred-size: 33.333%;
+            flex-basis: 33.333%;
     max-width: 33.333%; }
   .XL5 {
-    flex-basis: 41.667%;
+    -webkit-flex-basis: 41.667%;
+        -ms-flex-preferred-size: 41.667%;
+            flex-basis: 41.667%;
     max-width: 41.667%; }
   .XL6 {
-    flex-basis: 50%;
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
     max-width: 50%; }
   .XL7 {
-    flex-basis: 58.333%;
+    -webkit-flex-basis: 58.333%;
+        -ms-flex-preferred-size: 58.333%;
+            flex-basis: 58.333%;
     max-width: 58.333%; }
   .XL8 {
-    flex-basis: 66.667%;
+    -webkit-flex-basis: 66.667%;
+        -ms-flex-preferred-size: 66.667%;
+            flex-basis: 66.667%;
     max-width: 66.667%; }
   .XL9 {
-    flex-basis: 75%;
+    -webkit-flex-basis: 75%;
+        -ms-flex-preferred-size: 75%;
+            flex-basis: 75%;
     max-width: 75%; }
   .XL10 {
-    flex-basis: 83.333%;
+    -webkit-flex-basis: 83.333%;
+        -ms-flex-preferred-size: 83.333%;
+            flex-basis: 83.333%;
     max-width: 83.333%; }
   .XL11 {
-    flex-basis: 91.667%;
+    -webkit-flex-basis: 91.667%;
+        -ms-flex-preferred-size: 91.667%;
+            flex-basis: 91.667%;
     max-width: 91.667%; }
   .XL12 {
-    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
     max-width: 100%; }
   .XL--offset0 {
     margin-left: 0%; }
@@ -569,48 +885,94 @@
   .XL--offset12 {
     margin-left: 100%; }
   .XL--order0 {
-    order: 0; }
+    -webkit-order: 0;
+        -ms-flex-order: 0;
+            order: 0; }
   .XL--order1 {
-    order: 1; }
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
   .XL--order2 {
-    order: 2; }
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
   .XL--order3 {
-    order: 3; }
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
   .XL--order4 {
-    order: 4; }
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
   .XL--order5 {
-    order: 5; }
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
   .XL--order6 {
-    order: 6; }
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6; }
   .XL--order7 {
-    order: 7; }
+    -webkit-order: 7;
+        -ms-flex-order: 7;
+            order: 7; }
   .XL--order8 {
-    order: 8; }
+    -webkit-order: 8;
+        -ms-flex-order: 8;
+            order: 8; }
   .XL--order9 {
-    order: 9; }
+    -webkit-order: 9;
+        -ms-flex-order: 9;
+            order: 9; }
   .XL--order10 {
-    order: 10; }
+    -webkit-order: 10;
+        -ms-flex-order: 10;
+            order: 10; }
   .XL--order11 {
-    order: 11; }
+    -webkit-order: 11;
+        -ms-flex-order: 11;
+            order: 11; }
   .XL--order12 {
-    order: 12; }
+    -webkit-order: 12;
+        -ms-flex-order: 12;
+            order: 12; }
   .XL--start {
-    justify-content: flex-start; }
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
   .XL--center {
-    justify-content: center; }
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .XL--end {
-    justify-content: flex-end; }
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
   .XL--top {
-    align-items: flex-start; }
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .XL--middle {
-    align-items: center; }
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .XL--bottom {
-    align-items: flex-end; }
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
   .XL--stretch {
-    align-items: stretch; }
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .XL--reverse {
-    flex-direction: row-reverse; }
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
   .XL--around {
-    justify-content: space-around; }
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
   .XL--between {
-    justify-content: space-between; } }
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }

@@ -58,7 +58,7 @@
 ) {
     @include grid-column($_gutter);
 
-    @media (min-width: $screen__S) {
+    @media (min-width: $screen--S) {
         max-width: percentage(($_columns / $grid__columns));
     }
 }
@@ -66,7 +66,7 @@
 @mixin create-S--offset(
     $_columns
 ) {
-    @media (min-width: $screen__S) {
+    @media (min-width: $screen--S) {
         margin-left: percentage(($_columns / $grid__columns));
     }
 }
@@ -78,7 +78,7 @@
 ) {
     @include grid-column($_gutter);
 
-    @media (min-width: $screen__M) {
+    @media (min-width: $screen--M) {
         max-width: percentage(($_columns / $grid__columns));
     }
 }
@@ -86,7 +86,7 @@
 @mixin create-M--offset(
     $_columns
 ) {
-    @media (min-width: $screen__M) {
+    @media (min-width: $screen--M) {
         margin-left: percentage(($_columns / $grid__columns));
     }
 }
@@ -99,7 +99,7 @@
 
     @include grid-column($_gutter);
 
-    @media (min-width: $screen__L) {
+    @media (min-width: $screen--L) {
         max-width: percentage(($_columns / $grid__columns));
     }
 }
@@ -107,7 +107,7 @@
 @mixin create-L--offset(
     $_columns
 ) {
-    @media (min-width: $screen__L) {
+    @media (min-width: $screen--L) {
         margin-left: percentage(($_columns / $grid__columns));
     }
 }
@@ -116,10 +116,10 @@
 
 @mixin create-all-grid-columns(
     $i: 1,
-    $list: '.#{$name__X}#{$i}, .#{$name__S}#{$i}, .#{$name__M}#{$i}, .#{$name__L}#{$i}, .#{$name__XL}#{$i}'
+    $list: '.#{$name--X}#{$i}, .#{$name--S}#{$i}, .#{$name--M}#{$i}, .#{$name--L}#{$i}, .#{$name--XL}#{$i}'
 ) {
     @for $i from (1 + 1) through $grid__columns {
-        $list: '#{$list}, .#{$name__X}#{$i}, .#{$name__S}#{$i}, .#{$name__M}#{$i}, .#{$name__L}#{$i}, .#{$name__XL}#{$i}';
+        $list: '#{$list}, .#{$name--X}#{$i}, .#{$name--S}#{$i}, .#{$name--M}#{$i}, .#{$name--L}#{$i}, .#{$name--XL}#{$i}';
     }
     #{$list} {
         @include grid-column();
