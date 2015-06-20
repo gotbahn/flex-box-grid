@@ -91,7 +91,7 @@ img {
 }
 
 .main {
-    max-width: 960px;
+    max-width: 1024px;
     margin: 0 auto;
     padding: $col__height;
 }
@@ -250,4 +250,56 @@ pre[class*="language-"] {
     font-family: monospace;
     background: #F5F0F5;
     border-radius: 5px;
+}
+
+//  Stretch example
+
+[class*='--stretch'] {
+    height: 150px;
+    [class*='X'] {
+        position: relative;
+        .col-content-example {
+            position: absolute;
+            top: 0;
+            right: 5px;
+            left: 5px;
+            bottom: 0;
+        }
+    }
+}
+
+.nav {
+    display: none;
+    @media (min-width: $screen__M) {
+        position: fixed;
+        display: block;
+    }
+    h4 {
+        margin-top: 22px;
+    }
+    ul {
+        li {
+            &:hover {
+                &:before {
+                    color: $color__blue;
+                }
+            }
+        }
+        ul {
+            margin-top: 5px;
+            margin-bottom: 0;
+            margin-left: 25px;
+            li {
+                font-size: 12px;
+                margin-bottom: 3px;
+                &:before {
+                    content: '\2013';
+                }
+            }
+        }
+    }
+    a {
+        color: $color__gray-dark;
+        text-decoration: none;
+    }
 }

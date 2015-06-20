@@ -14,7 +14,61 @@
 <body>
 <main class="main">
     <div class="container">
-
+        <div class="row">
+            <div class="M2 M--offset1 M--order2">
+                <nav class="nav">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li>
+                            <a href="#basic">Basic</a>
+                        </li>
+                        <li>
+                            <a href="#mediaQueries">Media Queries</a>
+                        </li>
+                        <li>
+                            <a href="#mixed">Mixing</a>
+                        </li>
+                        <li>
+                            <a href="#nested">Nesting</a>
+                        </li>
+                        <li>
+                            <a href="#offset">Offseting</a>
+                        </li>
+                        <li>
+                            <a href="#reorder">Reordering</a>
+                        </li>
+                        <li>
+                            <a href="#reverse">Reversing</a>
+                        </li>
+                        <li>
+                            <a href="#alignment">Aligning</a>
+                            <ul>
+                                <li>
+                                    <a href="#alignmentHorizontal">Horizontal</a>
+                                </li>
+                                <li>
+                                    <a href="#alignmentVertical">Vertical</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#distribution">Distribution</a>
+                            <ul>
+                                <li>
+                                    <a href="#distributionBetween">Between</a>
+                                </li>
+                                <li>
+                                    <a href="#distributionAround">Around</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="M9 M--order1">
         <header
             id="header"
             class="row">
@@ -153,7 +207,7 @@
 </code></pre>
         </section>
 
-        <section class="mediaQueries">
+        <section id="mediaQueries" class="mediaQueries">
             <h2>Media Queries</h2>
             <p>
                 Media queries is a basis of any Responsive Grid System. To change column behavior each media query
@@ -422,11 +476,78 @@
 </code></pre>
         </section>
 
+        <section id="reverse">
+            <h2>Reversing columns</h2>
+            <p>
+                Well, hard to say what for, but columns can be also reversed with <code class="line-sass-class">N--reverse</code>
+            </p>
+
+            <div class="section-example">
+                <div class="row X--reverse">
+                    <div class="M1">
+                        <div class="col-content-example">1</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">2</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">3</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">4</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">5</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">6</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">7</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">8</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">9</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">10</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">11</div>
+                    </div>
+                    <div class="M1">
+                        <div class="col-content-example">12</div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--reverse">
+        &lt;div class="M1">1&lt;/div>
+        &lt;div class="M1">2&lt;/div>
+        &lt;div class="M1">3&lt;/div>
+        &lt;div class="M1">4&lt;/div>
+        &lt;div class="M1">5&lt;/div>
+        &lt;div class="M1">6&lt;/div>
+        &lt;div class="M1">7&lt;/div>
+        &lt;div class="M1">8&lt;/div>
+        &lt;div class="M1">9&lt;/div>
+        &lt;div class="M1">10&lt;/div>
+        &lt;div class="M1">11&lt;/div>
+        &lt;div class="M1">12&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
         <section id="alignment">
             <h2>Aligning columns</h2>
             <h3 id="alignmentHorizontal">Horizontal</h3>
             <p>
-                There is predefined classes for horizontal alignment with <code class="line-sass-class">--start</code>, <code class="line-sass-class">--center</code>, <code class="line-sass-class">--end</code></p>
+                There is predefined classes for horizontal alignment with <code class="line-sass-class">N--start</code>, <code class="line-sass-class">N--center</code>, <code class="line-sass-class">N--end</code></p>
             <div class="section-example">
                 <div class="row-example">
                     <small>.X--start</small>
@@ -482,7 +603,9 @@
 
             <h3 id="alignmentVertical">Vertical</h3>
             <p>
-                There is also predefined classes for vertical alignment with <code class="line-sass-class">--top</code>, <code class="line-sass-class">--middle</code>, <code class="line-sass-class">--bottom</code></p>
+                There is also predefined classes for vertical alignment with <code class="line-sass-class">N--top</code>, <code class="line-sass-class">N--middle</code>, <code class="line-sass-class">N--bottom</code>.
+                <br/>
+                Also you can do full height stretch with <code class="line-sass-class">N--stretch</code></p>
             <div class="section-example">
                 <div class="row-example">
                     <small>.X--top</small>
@@ -517,26 +640,103 @@
                         </div>
                     </div>
                 </div>
+                <div class="row-example">
+                    <small>.X--stretch</small>
+                    <div class="row X--stretch">
+                        <div class="X6">
+                            <div class="col-content-example">.X6</div>
+                        </div>
+                        <div class="X6">
+                            <div class="col-content-example">.X6</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 <pre class="language-markup"><code>
 &lt;div class="container">
     &lt;div class="row X--top">
-        &lt;div class="X3">...&lt;/div>
-        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
     &lt;/div>
     &lt;div class="row X--middle">
-        &lt;div class="X3">...&lt;/div>
-        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
     &lt;/div>
     &lt;div class="row X--bottom">
-        &lt;div class="X3">...&lt;/div>
-        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--stretch">
+        &lt;div class="X6">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
     &lt;/div>
 &lt;/div>
 </code></pre>
         </section>
 
+        <section id="distribution">
+            <h2>Distribution column space</h2>
+            <p>
+                Another helpful feature can be distribution columns space between or around columns.
+            </p>
+            <h3 id="distributionBetween">Between</h3>
+            <div class="section-example">
+                <div class="row X--between">
+                    <div class="X2">
+                        <div class="col-content-example">.X2</div>
+                    </div>
+                    <div class="X2">
+                        <div class="col-content-example">.X2</div>
+                    </div>
+                    <div class="X2">
+                        <div class="col-content-example">.X2</div>
+                    </div>
+                    <div class="X2">
+                        <div class="col-content-example">.X2</div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--between">
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+            <h3 id="distributionAround">Around</h3>
+            <div class="section-example">
+                <div class="row X--around">
+                    <div class="X2">
+                        <div class="col-content-example">.X2</div>
+                    </div>
+                    <div class="X2">
+                        <div class="col-content-example">.X2</div>
+                    </div>
+                    <div class="X2">
+                        <div class="col-content-example">.X2</div>
+                    </div>
+                    <div class="X2">
+                        <div class="col-content-example">.X2</div>
+                    </div>
+                </div>
+            </div>
+
+<pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--around">
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
 
         <section id="faq">
             <h2>FAQ</h2>
@@ -555,7 +755,8 @@
             </dl>
         </section>
 
-
+            </div>
+        </div>
     </div>
 </main>
 <script src="demo/scripts/prism.js"></script>

@@ -179,6 +179,18 @@
     .#{$_class}--bottom {
         align-items: flex-end;
     }
+    .#{$_class}--stretch {
+        align-items: stretch;
+    }
+    .#{$_class}--reverse {
+        flex-direction: row-reverse;
+    }
+    .#{$_class}--around {
+        justify-content: space-around;
+    }
+    .#{$_class}--between {
+        justify-content: space-between;
+    }
 }
 
 // Create grid for specific class

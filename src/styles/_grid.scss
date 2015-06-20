@@ -11,14 +11,6 @@
     @include init-row();
 }
 
-.row-reverse {
-    flex-direction: row-reverse;
-}
-
-.col-reverse {
-    flex-direction: column-reverse;
-}
-
 //  Make all grid columns
 //  ---------------------------------------------
 
@@ -55,15 +47,4 @@
 
 @media (min-width: $screen__XL) {
     @include create-grid-columns($name__XL);
-}
-
-//  Additional
-//  ---------------------------------------------
-
-.col-around {
-    justify-content: space-around;
-}
-
-.col-between {
-    justify-content: space-between;
 }
