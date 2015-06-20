@@ -63,7 +63,7 @@ By default FlexGrid have 12 columns.
 - Content should be placed within columns with classes <code>.X-n, .S-n, .M-n, .L-n, .XL-n</code> where n is columns number from 1 to 12 (by default).
 - Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>, by default it's 10px.
 
-<div styles="text-align: center"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-L.jpg" width="305px" alt="Laptop"></div>
+<p align="center"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-L.jpg" width="307px" alt="Laptop"></p>
 
 ```html
 <div class="container">
