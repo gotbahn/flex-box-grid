@@ -32,7 +32,7 @@ Download [full](https://raw.githubusercontent.com/godban/flexgrid/master/dist/cs
 Include inside <code>&lt;head&gt;</code> section
 
 ```html
-<link rel="stylesheet" href="pathto/flexbox.min.css">
+<link rel="stylesheet" href="pathto/flexgrid.min.css">
 ```
 
 #### with Sass
@@ -42,7 +42,7 @@ Extract it to Sass working directory.
 Import <code>flexbox.scss</code> to your styles:
  
 ```scss
-@import 'flexbox';
+@import 'flexgrid';
 ```
 
 or use it as separate compiled file.
@@ -335,13 +335,29 @@ The vast majority of websites out there use a grid. They may not explicitly have
 
 ### Why use Grid at all?
 
-Using grid system can significant speed up your work, keep you code understandable and DRY.
+Using grid system can significant speed up your work, keep you code understandable, solid and DRY.
+
+### Why use Flexbox Grid System (FGS) instead float one?
+
+Simply. It's more flexible :) FGS provides you not only the same functionality as float one, it allows significant expand Grid functionality with sorting, reordering, aligning and distribution features.
+
+### Concerns?
+
+If you can't say, "Screw IE9" you probably not ready for Flexboxes model in general yet.
+Also at the moment FGS should contain vendor prefixes <code>-ms-</code> for IE10 and <code>-webkit-</code> for Safari, which increase little bit styles size.
+
+
+### Why use FlexGrid? What alternatives are exist?</dt>
+    
+I tried to use [Foundation Grid](http://foundation.zurb.com/docs/components/grid.html) by Zurb, [Flexbox Grid](http://flexboxgrid.com/) by Kristofer Joseph, [Solved by Flexbox](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/grid.css) by Philip Walton and others. All of them not bad, but in my opinion too complicated for first meet, have specific namespaces and have not full features that Flexboxes model provides.
+
+FlexGrid uses simple object oriented name spacing, provides ease customization via Sass variables and have full list of Flexbox features.
 
 ## Contributing
 
 I'll check out your contribution if you:
 
-* Have a clear and comprehancive description for your changes in pull request.
+* Have a clear and comprehensive description for your changes in pull request.
 
 ## License
 

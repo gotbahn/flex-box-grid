@@ -113,6 +113,18 @@ module.exports = function (grunt) {
                     dest: path.dist.css,
                     ext: '.min.css'
                 }]
+            },
+            demo: {
+                files: [{
+                    expand: true,
+                    cwd: path.demo.styles,
+                    src: [
+                        '*.css',
+                        '!*.min.css'
+                    ],
+                    dest: path.demo.styles,
+                    ext: '.css'
+                }]
             }
         },
 
@@ -137,11 +149,15 @@ module.exports = function (grunt) {
 
         autoprefixer: {
             options: {
-                browsers: ['last 3 versions']
+                browsers: ['last 2 versions']
             },
-            main: {
+            flexgrid: {
                 files: {
-                    'dist/css/flexgrid.css': 'dist/css/flexgrid.css',
+                    'dist/css/flexgrid.css': 'dist/css/flexgrid.css'
+                }
+            },
+            demo: {
+                files: {
                     'demo/styles/styles.css': 'demo/styles/styles.css'
                 }
             }
@@ -160,12 +176,20 @@ module.exports = function (grunt) {
     grunt.registerTask('build', function () {
         grunt.task.run([
             'sass',
-            'autoprefixer',
-            'cssmin',
+            'autoprefixer:flexgrid',
+            'cssmin:flexgrid',
             'copy',
             'usebanner',
             'compress',
             'version'
+        ]);
+    });
+
+    grunt.registerTask('demo', function () {
+        grunt.task.run([
+            'sass:demo',
+            'autoprefixer:demo',
+            'cssmin:demo'
         ]);
     });
 
