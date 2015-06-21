@@ -97,6 +97,18 @@ module.exports = function (grunt) {
             }
         },
 
+        htmlmin: {
+            demo: {
+                options: {
+                    removeComments: true,
+                    collapseWhitespace: true
+                },
+                files: {
+                    'index.html': 'index-source.html'
+                }
+            }
+        },
+
         cssmin: {
             options: {
                 'report': 'gzip',
@@ -164,11 +176,14 @@ module.exports = function (grunt) {
         },
 
         watch: {
-            options: {
-                livereload: true
-            },
-            files: ['**/*.scss'],
-            tasks: ['sass']
+            demo: {
+                options: {
+                    livereload: true
+                },
+                files: [path.demo.styles + '**/*.scss'],
+                tasks: ['sass:demo']
+            }
+
         }
 
     });
@@ -189,7 +204,8 @@ module.exports = function (grunt) {
         grunt.task.run([
             'sass:demo',
             'autoprefixer:demo',
-            'cssmin:demo'
+            'cssmin:demo',
+            'htmlmin:demo'
         ]);
     });
 
