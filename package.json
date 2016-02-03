@@ -1,5 +1,5 @@
 {
-  "name": "FlexGrid",
+  "name": "flex-box-grid",
   "description": "Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs.",
   "keywords": [
     "Grid",
@@ -13,7 +13,7 @@
   "version": "0.2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/godban/flexgrid.git"
+    "url": "git://github.com/godban/flex-box-grid.git"
   },
   "main": "dist/css/flexgrid.min.css",
   "license": "MIT",
