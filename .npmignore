@@ -1,12 +1,13 @@
+.idea/
 bower_components/
 demo/
 node_modules/
 src/
 .gitignore
+.npmignore
 bower.json
 favicon.ico
 Gruntfile.js
 index.html
 index-source.html
-LICENSE
 package.json
