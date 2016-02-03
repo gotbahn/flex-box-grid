@@ -23,20 +23,19 @@
     "homepage": "http://godban.com.ua"
   },
   "readmeFilename": "README.md",
-  "dependencies": {},
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-autoprefixer": "^3.0.1",
-    "grunt-banner": "^0.4.0",
-    "grunt-contrib-compress": "^0.13.0",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-cssmin": "^0.12.3",
-    "grunt-contrib-htmlmin": "^0.4.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-exec": "^0.4.6",
-    "grunt-sass": "^1.0.0",
-    "grunt-version": "^0.3.0",
-    "load-grunt-tasks": "^3.2.0",
-    "time-grunt": "^1.2.1"
+    "grunt": "0.4.1",
+    "grunt-autoprefixer": "3.0.1",
+    "grunt-banner": "0.4.0",
+    "grunt-contrib-compress": "0.13.0",
+    "grunt-contrib-copy": "0.8.0",
+    "grunt-contrib-cssmin": "0.12.3",
+    "grunt-contrib-htmlmin": "0.4.0",
+    "grunt-contrib-watch": "0.5.3",
+    "grunt-exec": "0.4.6",
+    "grunt-sass": "1.0.0",
+    "grunt-version": "0.3.0",
+    "load-grunt-tasks": "3.2.0",
+    "time-grunt": "1.2.1"
   }
 }
