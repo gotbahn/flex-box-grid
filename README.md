@@ -1,3 +1,7 @@
+[![npm](https://img.shields.io/npm/v/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
+[![npm](https://img.shields.io/npm/dt/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
+[![npm](https://img.shields.io/npm/dm/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
+
 # ▥ FlexGrid
 
 Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs.
