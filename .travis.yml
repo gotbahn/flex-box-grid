@@ -1,6 +1,10 @@
 language: node_js
 os: linux
 node_js:
-  - node
+  node
 install:
   npm install
+before_install:
+  npm install -g greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
