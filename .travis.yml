@@ -4,5 +4,8 @@ node_js:
   node
 install:
   npm install
-before_script: npx greenkeeper-lockfile-update
-after_script: npx greenkeeper-lockfile-upload
+before_install:
+  npm install -g npm
+  npm install -g greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
