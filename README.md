@@ -29,6 +29,12 @@ Create clean, simple and powerful multi-device, responsive, mobile first grid la
 
 ## <a name="installation"></a>Installation
 
+### <a name="npm"></a>via npm
+
+    npm install flex-box-grid
+    
+and use CSS or Sass version from `node_modules/flex-box-grid` folder
+
 ### <a name="manual"></a>Manual
 
 #### with CSS
@@ -38,13 +44,7 @@ Download [css](https://raw.githubusercontent.com/godban/flex-box-grid/master/dis
 #### with Sass
 
 Download [flexboxgrid.zip](https://raw.githubusercontent.com/godban/flex-box-grid/master/dist/flexboxgrid.zip).
-Extract it to Sass working directory.
-
-### <a name="npm"></a>via npm
-
-    npm install flex-box-grid
-    
-and use CSS or Sass version from `node_modules` folder.
+Extract it to Sass working directory
 
 ## <a name="documentation"></a>Demo & Documentation
 
