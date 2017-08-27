@@ -14,11 +14,11 @@ General Cleanup
 - [Contributing guide](CONTRIBUTING.md)
 - [License](LICENSE) 
 
-## Changed
+### Changed
 - Documentation and Demo now lives in [https://flex-box-grid.github.io](https://flex-box-grid.github.io)
 - **[Breaking changes]** Entries renamed to `index`
 - Build now using npm scripts instead of Grunt.js
 
-## Removed
+### Removed
 - **[Breaking changes]** Bower package
 - **[Breaking changes]** Minified css version
