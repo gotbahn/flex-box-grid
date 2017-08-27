@@ -1,10 +1,10 @@
-[![npm](https://img.shields.io/npm/v/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
-[![npm](https://img.shields.io/npm/dt/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
-[![npm](https://img.shields.io/npm/dm/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
-
 # ▥ Flex Box Grid
 
+[![npm](https://img.shields.io/npm/v/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
+[![Build Status](https://travis-ci.org/godban/flex-box-grid.svg?branch=master)](https://travis-ci.org/godban/flex-box-grid)
 [![Greenkeeper badge](https://badges.greenkeeper.io/godban/flex-box-grid.svg)](https://greenkeeper.io/)
+[![npm](https://img.shields.io/npm/dt/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
+[![npm](https://img.shields.io/npm/dm/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
 
 Responsive, mobile first Flexbox Grid
 
