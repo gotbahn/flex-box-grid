@@ -353,13 +353,3 @@ Also at the moment FGS should contain vendor prefixes <code>-ms-</code> for IE10
 I tried to use [Foundation Grid](http://foundation.zurb.com/docs/components/grid.html) by Zurb, [Flexbox Grid](http://flexboxgrid.com/) by Kristofer Joseph, [Solved by Flexbox](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/grid.css) by Philip Walton and others. All of them not bad, but in my opinion too complicated for first meet, have specific namespaces and have not full features that Flexboxes model provides.
 
 Flex Box Grid uses simple object oriented name spacing, provides ease customization via Sass variables and have full list of Flexbox features.
-
-## Contributing
-
-I'll check out your contribution if you:
-
-* Have a clear and comprehensive description for your changes in pull request.
-
-## License
-
-MIT
