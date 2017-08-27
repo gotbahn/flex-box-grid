@@ -2,13 +2,13 @@
 [![npm](https://img.shields.io/npm/dt/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
 [![npm](https://img.shields.io/npm/dm/flex-box-grid.svg?maxAge=2592000)](https://www.npmjs.com/package/flex-box-grid)
 
-# ▥ FlexGrid
+# ▥ Flex Box Grid
 
 Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs.
 
 - [Installation](#installation)
-    - [Manual](#manual)
-    - [via Bower](#bower)
+    - [npm](#npm)
+    - [manual](#manual)
 - [Demo & Documentation](#documentation)
     - [Basic](#basic)
     - [Media Queries](#mediaQueries)
@@ -29,50 +29,38 @@ Create clean, simple and powerful multi-device, responsive, mobile first grid la
 
 ## <a name="installation"></a>Installation
 
+### <a name="npm"></a>via npm
+
+    npm install flex-box-grid
+    
+and use CSS or Sass version from `node_modules/flex-box-grid` folder
+
 ### <a name="manual"></a>Manual
 
 #### with CSS
 
-Download [full](https://raw.githubusercontent.com/godban/flexgrid/master/dist/css/flexgrid.css) or [minified](https://raw.githubusercontent.com/godban/flexgrid/master/dist/css/flexgrid.min.css) version.
-Include inside <code>&lt;head&gt;</code> section
-
-```html
-<link rel="stylesheet" href="pathto/flexgrid.min.css">
-```
+Download [css](https://raw.githubusercontent.com/godban/flex-box-grid/master/dist/css/index.css) and include inside <code>&lt;head&gt;</code> section.
 
 #### with Sass
 
-Download [flexgrid.zip](https://raw.githubusercontent.com/godban/flexgrid/master/dist/flexgrid.zip).
-Extract it to Sass working directory.
-Import <code>flexbox.scss</code> to your styles:
- 
-```scss
-@import 'flexgrid';
-```
-
-or use it as separate compiled file.
-
-### <a name="bower"></a>via Bower
-
-    bower install flexgrid
-    
-and use CSS or Sass version from bower package.
+Download [flexboxgrid.zip](https://raw.githubusercontent.com/godban/flex-box-grid/master/dist/flexboxgrid.zip).
+Extract it to Sass working directory
 
 ## <a name="documentation"></a>Demo & Documentation
 
-Demo and most detailed documentation you can find [here](http://godban.com.ua/projects/flexgrid/ "FlexGrid demo & documentation").
+Demo and most detailed documentation you can find [here](https://flex-box-grid.github.io) "Flex Box Grid Demo & Documentation").
 
 ### <a name="basic"></a>Basic
 
-FlexGrid systems are used for creating page layouts through a series of rows and columns that house your content. 
-By default FlexGrid have 12 columns.
+Flex Box Grid systems are used for creating page layouts through a series of rows and columns that house your content. 
+By default Flex Box Grid have 12 columns.
 
 - Rows must be placed within a <code>.container</code> with predefined paddings that equal half column gutter.
 - Use rows .row to create horizontal groups of columns.
 - Content should be placed within columns with classes <code>.X-n, .S-n, .M-n, .L-n, .XL-n</code> where n is columns number from 1 to 12 (by default).
 - Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on <code>.row</code>, by default it's 10px.
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/base-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/base-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/base-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -91,7 +79,7 @@ Media queries is a basis of any Responsive Grid System. To change column behavio
 
 As example column with <code>.M6</code> class will be halfwidth until the window width becomes equal to 768px or less matching <code>$screen--M</code>.
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/media-queries.png" width="500" alt="Areas">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/media-queries.png" width="500" alt="Areas">
 
 Predefined break points:
 ```scss
@@ -125,7 +113,7 @@ To change column content behavior...
 
 Wanna different behavior on multiple devices? Try to mix columns.
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/mixin-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/mixin-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/mixin-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/mixin-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -147,7 +135,7 @@ You can mix any number of different grid classes
 
 Grid columns can be nested one into another.
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/nesting-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/nesting-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/nesting-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/nesting-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -173,7 +161,7 @@ Grid columns can be nested one into another.
 
 Move columns right using <code>--offsetN</code> suffix on grid classes. These will increase left indent of a column. As example <code>.M--offset2</code> moves <code>.M6</code> block over 2 columns.
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/offsetting-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/offsetting-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/offsetting-M.jpg" width="90px" alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/offsetting-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -196,8 +184,8 @@ Move columns right using <code>--offsetN</code> suffix on grid classes. These wi
 Grid columns order can be changed in any way with <code>--orderN</code> suffix.
 You can change swap blocks position on different devices. No need to duplicate blocks anymore.
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/reordering-M.jpg" width="90px" 
-alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/reordering-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/reordering-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/reordering-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -218,8 +206,8 @@ alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/
 
 Well, hard to say what for, but columns can be also reversed with <code>N--reverse</code>
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/reversing-M.jpg" width="90px" 
-alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/reversing-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/reversing-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/reversing-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -247,8 +235,8 @@ alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/
 
 There is predefined classes for horizontal alignment with <code class="line-sass-class">--start</code>, <code class="line-sass-class">--center</code>, <code class="line-sass-class">--end</code>.
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/aligning-horizontal-M.jpg" width="90px" 
-alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/aligning-horizontal-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/aligning-horizontal-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/aligning-horizontal-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -272,8 +260,8 @@ alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/
 There is also predefined classes for vertical alignment with <code class="line-sass-class">--top</code>, <code class="line-sass-class">--middle</code>, <code class="line-sass-class">--bottom</code>.
 Also you can do full height stretch with <code>N--stretch</code>.
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/aligning-vertical-M.jpg" width="90px" 
-alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/aligning-vertical-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/aligning-vertical-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/aligning-vertical-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -302,8 +290,8 @@ alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/
 
 Another helpful feature can be distribution columns space between or around columns.
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/distribution-between-M.jpg" width="90px" 
-alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/distribution-between-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/distribution-between-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/distribution-between-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -318,8 +306,8 @@ alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/
 
 #### <a name="distributionAround"></a>Around
 
-<img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/distribution-around-M.jpg" width="90px" 
-alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flexgrid/master/demo/images/distribution-around-L.jpg" width="307px" alt="Laptop">
+<img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/distribution-around-M.jpg" width="90px" 
+alt="Mobile"><img src="https://raw.githubusercontent.com/godban/flex-box-grid/master/demo/images/distribution-around-L.jpg" width="307px" alt="Laptop">
 
 ```html
 <div class="container">
@@ -358,11 +346,11 @@ If you can't say, "Screw IE9" you probably not ready for Flexboxes model in gene
 Also at the moment FGS should contain vendor prefixes <code>-ms-</code> for IE10 and <code>-webkit-</code> for Safari, which increase little bit styles size.
 
 
-### Why use FlexGrid? What alternatives are exist?</dt>
+### Why use Flex Box Grid? What alternatives are exist?</dt>
     
 I tried to use [Foundation Grid](http://foundation.zurb.com/docs/components/grid.html) by Zurb, [Flexbox Grid](http://flexboxgrid.com/) by Kristofer Joseph, [Solved by Flexbox](https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/grid.css) by Philip Walton and others. All of them not bad, but in my opinion too complicated for first meet, have specific namespaces and have not full features that Flexboxes model provides.
 
-FlexGrid uses simple object oriented name spacing, provides ease customization via Sass variables and have full list of Flexbox features.
+Flex Box Grid uses simple object oriented name spacing, provides ease customization via Sass variables and have full list of Flexbox features.
 
 ## Contributing
 
