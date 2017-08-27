@@ -26,17 +26,17 @@
     "url": "git://github.com/godban/flex-box-grid.git"
   },
   "scripts": {
-    "build": "npm run dist && npm run demo",
+    "build": "npm run dist && npm run docs",
     "dist": "npm run dist:clean && npm run dist:copy && npm run dist:scss && npm run dist:postcss && npm run dist:zip",
     "dist:clean": "rm -rf dist",
     "dist:copy": "mkdir dist && cp -a src/scss dist/scss",
     "dist:scss": "node-sass src/scss/index.scss dist/css/index.css --output-style=expanded",
     "dist:postcss": "postcss -u autoprefixer -c postcss.config.js -o dist/css/*.css dist/css/index.css",
     "dist:zip": "zip -r dist/flexboxgrid.zip dist/scss",
-    "demo": "npm run demo:clean && npm run demo:copy && npm run demo:scss",
-    "demo:clean": "rm -rf demo/styles/flex-box-grid demo/dist",
-    "demo:copy": "cp -a dist/scss demo/styles/flex-box-grid && cp -a dist demo/dist",
-    "demo:scss": "node-sass demo/styles/index.scss demo/styles/index.css --output-style=compressed"
+    "docs": "npm run docs:clean && npm run docs:copy && npm run docs:scss",
+    "docs:clean": "rm -rf docs/styles/flex-box-grid docs/dist",
+    "docs:copy": "cp -a dist/scss docs/styles/flex-box-grid && cp -a dist docs/dist",
+    "docs:scss": "node-sass docs/styles/index.scss docs/styles/index.css --output-style=compressed"
   },
   "version": "1.0.0"
 }
