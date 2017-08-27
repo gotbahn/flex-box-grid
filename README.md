@@ -4,6 +4,8 @@
 
 # ▥ Flex Box Grid
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/godban/flex-box-grid.svg)](https://greenkeeper.io/)
+
 Responsive, mobile first Flexbox Grid
 
 - [Installation](#installation)
