@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flex Box Grid</title>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <meta
+    name="description"
+    property="og:description"
+    content="Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs."
+  />
+  <meta
+    name="keywords"
+    content="Grid, Flex, FlexBox, Flex Grid, Responsive, Grid System, Mobile First"
+  />
+  <meta property="og:title" content="Flex Box Grid" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="fb:app_id" content="1547693265447721" />
+  <meta property="fb:admins" content="bogdan.plieshka" />
+  <meta property="og:url" content="https://flex-box-grid.github.io" />
+  <meta property="og:site_name" content="https://flex-box-grid.github.io" />
+  <link rel="canonical" href="https://flex-box-grid.github.io" >
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link href="./favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<main class="main">
+  <div class="container">
+    <div class="row">
+      <aside class="M2 M--offset1 M--order2">
+        <nav class="nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li>
+              <a href="#basic">Basic</a>
+            </li>
+            <li>
+              <a href="#mediaQueries">Media Queries</a>
+            </li>
+            <li>
+              <a href="#mixed">Mixing</a>
+            </li>
+            <li>
+              <a href="#nested">Nesting</a>
+            </li>
+            <li>
+              <a href="#offset">Offseting</a>
+            </li>
+            <li>
+              <a href="#reorder">Reordering</a>
+            </li>
+            <li>
+              <a href="#reverse">Reversing</a>
+            </li>
+            <li>
+              <a href="#alignment">Aligning</a>
+              <ul>
+                <li>
+                  <a href="#alignmentHorizontal">Horizontal</a>
+                </li>
+                <li>
+                  <a href="#alignmentVertical">Vertical</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#distribution">Distribution</a>
+              <ul>
+                <li>
+                  <a href="#distributionBetween">Between</a>
+                </li>
+                <li>
+                  <a href="#distributionAround">Around</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="social-box">
+          <div class="social-box__item">
+            <a
+              class="github-button" href="https://github.com/godban/flex-box-grid" data-show-count="true"
+              aria-label="Star godban/flex-box-grid on GitHub"
+            >Star</a>
+          </div>
+          <div class="social-box__item">
+            <a
+              href="https://twitter.com/share"
+              class="twitter-share-button"
+              data-show-count="false">Tweet</a>
+          </div>
+        </div>
+      </aside>
+      <div class="M9 M--order1">
+        <header
+          id="header"
+          class="header row"
+        >
+            <span class="flexgrid-logo">
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+                <span class="flexgrid-logo__item"></span>
+            </span>
+          <div class="M4">
+            <h1 class="page-title">
+              <span class="accent-text">Flex</span>Grid
+            </h1>
+          </div>
+          <div class="M8">
+            <div class="header-actions">
+              <a class="btn btn-download-css" href="dist/css/index.css">Download CSS</a>
+              <a class="btn btn-download-scss" href="dist/flexboxgrid.zip">Download Sass</a>
+              <a class="btn btn-github" href="https://github.com/godban/flexgrid" target="_blank">GitHub</a>
+            </div>
+          </div>
+          <div class="X12">
+            <p class="page-description">
+              Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via <a
+              href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes" target="_blank"
+            >Flexible Boxes</a>. Short, intuitive solid structure with flexible options system, mixin generators to
+              match any of your needs.
+            </p>
+          </div>
+        </header>
+
+        <section id="basic">
+          <h2>Basic</h2>
+
+          <p>
+            Flex Box Grid systems are used for creating page layouts through a series of rows and columns that house your
+            content.
+            <br />
+            By default Flex Box Grid have 12 columns.
+          </p>
+
+          <div class="section-example">
+            <div class="row">
+              <!--.M1*12>.col-content-example{.M1}-->
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">.M1</div>
+              </div>
+            </div>
+            <div class="row">
+              <!--(.M8>.col-content-example{.M8})+.M4>.col-content-example{.M4}-->
+              <div class="M8">
+                <div class="col-content-example">.M8</div>
+              </div>
+              <div class="M4">
+                <div class="col-content-example">.M4</div>
+              </div>
+            </div>
+            <div class="row">
+              <!--.M6*2>.col-content-example{.M6}-->
+              <div class="M6">
+                <div class="col-content-example">.M6</div>
+              </div>
+              <div class="M6">
+                <div class="col-content-example">.M6</div>
+              </div>
+            </div>
+            <div class="row">
+              <!--.M4*3>.col-content-example{.M4}-->
+              <div class="M4">
+                <div class="col-content-example">.M4</div>
+              </div>
+              <div class="M4">
+                <div class="col-content-example">.M4</div>
+              </div>
+              <div class="M4">
+                <div class="col-content-example">.M4</div>
+              </div>
+            </div>
+          </div>
+
+          <ul>
+            <li>
+              Rows must be placed within a <code class="line-sass-class">.container</code> with predefined paddings that
+              equal half column gutter.
+            </li>
+            <li>
+              Use rows <code class="line-sass-class">.row</code> to create horizontal groups of columns.
+            </li>
+            <li>
+              Content should be placed within columns with classes <code class="line-sass-class">.X-n, .S-n, .M-n, .L-n,
+              .XL-n</code> where <code class="line-sass-class">n</code> is columns number from 1 to 12 (by default).
+            </li>
+            <li>
+              Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the
+              first and last column via negative margin on <code class="line-sass-class">.row</code>, by default it's
+              10px.
+            </li>
+          </ul>
+
+          <p class="code-block-description">HTML syntax is completely simple:</p>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M1">...&lt;/div> * 12
+    &lt;/div>
+    &lt;div class="row">
+        &lt;div class="M8">...&lt;/div>
+        &lt;div class="M4">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row">
+        &lt;div class="M6">...&lt;/div>
+        &lt;div class="M6">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row">
+        &lt;div class="M4">...&lt;/div> * 3
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
+        <section id="mediaQueries" class="mediaQueries">
+          <h2>Media Queries</h2>
+          <p>
+            Media queries is a basis of any Responsive Grid System. To change column behavior each media query
+            breakpoint connected with column class name with simply recognizing size name: <span
+            class="line-sass-class"
+          >X, S, M, L, XL</span>.
+            <br />
+            <br />
+            As example column with <span class="line-sass-class">.M6</span> class will be halfwidth until the window
+            width becomes equal to 768px or less matching <span class="line-sass-variable">$screen--M</span>.
+          </p>
+          <div class="row">
+            <div class="M5">
+              <p class="code-block-description">Areas:</p>
+              <img
+                src="images/media-queries.svg"
+                alt="Media Queries"
+                width="365"
+              />
+            </div>
+            <div class="M4 M--offset1">
+              <p class="code-block-description">Predefined break points:</p>
+              <pre class="language-scss"><code>
+    $break--S:  480px;
+    $break--M:  768px;
+    $break--L:  1024px;
+    $break--XL: 1440px;
+</code></pre>
+            </div>
+          </div>
+          <div class="row">
+            <div class="M6">
+              <p class="code-block-description">
+                To change column content behavior...
+              </p>
+              <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M6">
+            &lt;div class="foo">...&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+
+            </div>
+            <div class="M6">
+              <p class="code-block-description">
+                ...use appropriate media query
+              </p>
+              <pre class="language-scss"><code>
+@media (min-width: $screen--M) {
+    .foo {
+        ...
+    }
+}
+
+
+</code></pre>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="mixed">
+          <h2>Mixing columns</h2>
+
+          <p>
+            Wanna different behavior on multiple devices? Try to mix columns.
+          </p>
+
+          <div class="section-example">
+            <div class="row">
+              <!--(.M4.L8>.col-content-example{.M4 .L8})+(.M8.L4>.col-content-example{.M8 .L4})-->
+              <div class="M4 L8">
+                <div class="col-content-example">.M4 .L8</div>
+              </div>
+              <div class="M8 L4">
+                <div class="col-content-example">.M8 .L4</div>
+              </div>
+            </div>
+            <div class="row">
+              <!--(.M6.L4>.col-content-example{.M6 .L4})+(.M6.L4>.col-content-example{.M6 .L4})+(.M12.L4>.col-content-example{.M12 .L4})-->
+              <div class="M6 L4">
+                <div class="col-content-example">.M6 .L4</div>
+              </div>
+              <div class="M6 L4">
+                <div class="col-content-example">.M6 .L4</div>
+              </div>
+              <div class="M12 L4">
+                <div class="col-content-example">.M12 .L4</div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M4 L8">...&lt;/div>
+        &lt;div class="M8 L4">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row">
+        &lt;div class="M6 L4">...&lt;/div>
+        &lt;div class="M6 L4">...&lt;/div>
+        &lt;div class="M12 L4">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+          <p>
+            You can mix any number of different grid classes
+          </p>
+        </section>
+
+        <section id="nested">
+          <h2>Nesting columns</h2>
+          <p>
+            Grid columns can be nested one into another.
+          </p>
+
+          <div class="section-example">
+            <div class="row">
+              <div class="M8">
+                <div class="col-content-example-wrap">
+                  .M8
+                  <div class="row">
+                    <div class="M6">
+                      <div class="col-content-example">.M6</div>
+                    </div>
+                    <div class="M6">
+                      <div class="col-content-example">.M6</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="M4">
+                <div class="col-content-example-wrap">
+                  .M4
+                  <div class="row">
+                    <div class="M4">
+                      <div class="col-content-example">.M4</div>
+                    </div>
+                    <div class="M4">
+                      <div class="col-content-example">.M4</div>
+                    </div>
+                    <div class="M4">
+                      <div class="col-content-example">.M4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M8">
+            &lt;div class="row">
+                &lt;div class="M6">...&lt;/div>
+                &lt;div class="M6">...&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        &lt;div class="M4">
+            &lt;div class="row">
+                &lt;div class="M4">...&lt;/div>
+                &lt;div class="M4">...&lt;/div>
+                &lt;div class="M4">...&lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
+        <section id="offset">
+          <h2>Offseting columns</h2>
+          <p>
+            Move columns right using <code class="line-sass-class">--offset</code> suffix on grid classes. These will
+            increase left indent of a column. As example <code class="line-sass-class">.M2--offset</code> moves <code
+            class="line-sass-class"
+          >.M6</code> block over 2 columns.
+          </p>
+
+          <div class="section-example">
+            <div class="row">
+              <!--(.M6.M--offset1>.col-content-example{.M6 .M--offset1})+(.M5>.col-content-example{.M5})-->
+              <div class="M6 M--offset1">
+                <div class="col-content-example">.M6 .M--offset1</div>
+              </div>
+              <div class="M5">
+                <div class="col-content-example">.M5</div>
+              </div>
+            </div>
+            <div class="row">
+              <!--(.M6.M--offset3>.col-content-example{.M6 .M--offset2})-->
+              <div class="M6 M--offset3">
+                <div class="col-content-example">.M6 .M--offset2</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="M4">
+                <div class="col-content-example">.M4</div>
+              </div>
+              <div class="M4 M--offset4">
+                <div class="col-content-example">.M4 .M--offset4</div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M6 M--offset1">...&lt;/div>
+        &lt;div class="M5">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row">
+        &lt;div class="M6 M--offset2">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row">
+        &lt;div class="M4">...&lt;/div>
+        &lt;div class="M4 M--offset4">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
+        <section id="reorder">
+          <h2>Reordering columns</h2>
+          <p>
+            Grid columns order can be changed in any way with <code class="line-sass-class">--orderN</code> suffix.
+            <br />
+            You can change swap blocks position on different devices. No need to duplicate blocks anymore.
+          </p>
+
+          <div class="section-example">
+            <div class="row">
+              <div class="X3 X--order4">
+                <div class="col-content-example">.X3 .X--order4</div>
+              </div>
+              <div class="X3 X--order1">
+                <div class="col-content-example">.X3 .X--order1</div>
+              </div>
+              <div class="X3 X--order2">
+                <div class="col-content-example">.X3 .X--order2</div>
+              </div>
+              <div class="X3 X--order3">
+                <div class="col-content-example">.X3 .X--order3</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="M6 M--order2">
+                <div class="col-content-example">.M6 .M--order2</div>
+              </div>
+              <div class="M6 M--order1">
+                <div class="col-content-example">.M6 .M--order1</div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row">
+        &lt;div class="M3 X--order4">...&lt;/div>
+        &lt;div class="M3 X--order1">...&lt;/div>
+        &lt;div class="M3 X--order2">...&lt;/div>
+        &lt;div class="M3 X--order3">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row">
+        &lt;div class="M6 M--order6">...&lt;/div>
+        &lt;div class="M3 M--order6">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
+        <section id="reverse">
+          <h2>Reversing columns</h2>
+          <p>
+            Well, hard to say what for, but columns can be also reversed with <code
+            class="line-sass-class"
+          >N--reverse</code>
+          </p>
+
+          <div class="section-example">
+            <div class="row X--reverse">
+              <div class="M1">
+                <div class="col-content-example">1</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">2</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">3</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">4</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">5</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">6</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">7</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">8</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">9</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">10</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">11</div>
+              </div>
+              <div class="M1">
+                <div class="col-content-example">12</div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--reverse">
+        &lt;div class="M1">1&lt;/div>
+        &lt;div class="M1">2&lt;/div>
+        &lt;div class="M1">3&lt;/div>
+        &lt;div class="M1">4&lt;/div>
+        &lt;div class="M1">5&lt;/div>
+        &lt;div class="M1">6&lt;/div>
+        &lt;div class="M1">7&lt;/div>
+        &lt;div class="M1">8&lt;/div>
+        &lt;div class="M1">9&lt;/div>
+        &lt;div class="M1">10&lt;/div>
+        &lt;div class="M1">11&lt;/div>
+        &lt;div class="M1">12&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
+        <section id="alignment">
+          <h2>Aligning columns</h2>
+          <h3 id="alignmentHorizontal">Horizontal</h3>
+          <p>
+            There is predefined classes for horizontal alignment with <code class="line-sass-class">N--start</code>,
+            <code class="line-sass-class">N--center</code>, <code class="line-sass-class">N--end</code></p>
+          <div class="section-example">
+            <div class="row-example">
+              <small>.X--start</small>
+              <div class="row X--start">
+                <div class="X3">
+                  <div class="col-content-example">.X3</div>
+                </div>
+                <div class="X3">
+                  <div class="col-content-example">.X3</div>
+                </div>
+              </div>
+            </div>
+            <div class="row-example">
+              <small>.X--center</small>
+              <div class="row X--center">
+                <div class="X3">
+                  <div class="col-content-example">.X3</div>
+                </div>
+                <div class="X3">
+                  <div class="col-content-example">.X3</div>
+                </div>
+              </div>
+            </div>
+            <div class="row-example">
+              <small>.X--end</small>
+              <div class="row X--end">
+                <div class="X3">
+                  <div class="col-content-example">.X3</div>
+                </div>
+                <div class="X3">
+                  <div class="col-content-example">.X3</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--start">
+        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X3">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--center">
+        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X3">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--end">
+        &lt;div class="X3">...&lt;/div>
+        &lt;div class="X3">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+
+          <h3 id="alignmentVertical">Vertical</h3>
+          <p>
+            There is also predefined classes for vertical alignment with <code class="line-sass-class">N--top</code>,
+            <code class="line-sass-class">N--middle</code>, <code class="line-sass-class">N--bottom</code>.
+            <br />
+            Also you can do full height stretch with <code class="line-sass-class">N--stretch</code></p>
+          <div class="section-example">
+            <div class="row-example">
+              <small>.X--top</small>
+              <div class="row X--top">
+                <div class="X6">
+                  <div class="col-content-example col-content-example-x2">.X6</div>
+                </div>
+                <div class="X6">
+                  <div class="col-content-example">.X6</div>
+                </div>
+              </div>
+            </div>
+            <div class="row-example">
+              <small>.X--middle</small>
+              <div class="row X--middle">
+                <div class="X6">
+                  <div class="col-content-example col-content-example-x2">.X6</div>
+                </div>
+                <div class="X6">
+                  <div class="col-content-example">.X6</div>
+                </div>
+              </div>
+            </div>
+            <div class="row-example">
+              <small>.X--bottom</small>
+              <div class="row X--bottom">
+                <div class="X6">
+                  <div class="col-content-example col-content-example-x2">.X6</div>
+                </div>
+                <div class="X6">
+                  <div class="col-content-example">.X6</div>
+                </div>
+              </div>
+            </div>
+            <div class="row-example">
+              <small>.X--stretch</small>
+              <div class="row X--stretch">
+                <div class="X6">
+                  <div class="col-content-example">.X6</div>
+                </div>
+                <div class="X6">
+                  <div class="col-content-example">.X6</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--top">
+        &lt;div class="X6">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--middle">
+        &lt;div class="X6">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--bottom">
+        &lt;div class="X6">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
+    &lt;/div>
+    &lt;div class="row X--stretch">
+        &lt;div class="X6">...&lt;/div>
+        &lt;div class="X6">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
+        <section id="distribution">
+          <h2>Distribution column space</h2>
+          <p>
+            Another helpful feature can be distribution columns space between or around columns.
+          </p>
+          <h3 id="distributionBetween">Between</h3>
+          <div class="section-example">
+            <div class="row X--between">
+              <div class="X2">
+                <div class="col-content-example">.X2</div>
+              </div>
+              <div class="X2">
+                <div class="col-content-example">.X2</div>
+              </div>
+              <div class="X2">
+                <div class="col-content-example">.X2</div>
+              </div>
+              <div class="X2">
+                <div class="col-content-example">.X2</div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--between">
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+          <h3 id="distributionAround">Around</h3>
+          <div class="section-example">
+            <div class="row X--around">
+              <div class="X2">
+                <div class="col-content-example">.X2</div>
+              </div>
+              <div class="X2">
+                <div class="col-content-example">.X2</div>
+              </div>
+              <div class="X2">
+                <div class="col-content-example">.X2</div>
+              </div>
+              <div class="X2">
+                <div class="col-content-example">.X2</div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="language-markup"><code>
+&lt;div class="container">
+    &lt;div class="row X--around">
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+        &lt;div class="X2">...&lt;/div>
+    &lt;/div>
+&lt;/div>
+</code></pre>
+        </section>
+
+        <section id="faq">
+          <h2>FAQ</h2>
+
+          <dl>
+            <dt>What is Grid?</dt>
+            <dd>
+              The vast majority of websites out there use a grid. They may not explicitly have a grid system in place,
+              but if they have a "main content area" floated to the left a "sidebar" floated to the right, it's a simple
+              grid.
+            </dd>
+            <dt>
+              Why use Grid at all?
+            </dt>
+            <dd>
+              Using grid system can significant speed up your work, keep you code understandable, solid and DRY.
+            </dd>
+            <dt>
+              Why use Flexbox Grid System (FGS) instead float one?
+            </dt>
+            <dd>
+              Simply. It's more flexible :) FGS provides you not only the same functionality as float one, it allows
+              significant expand Grid functionality with sorting, reordering, aligning and distribution features.
+            </dd>
+            <dt>
+              Concerns?
+            </dt>
+            <dd>
+              If you can't say, "Screw IE9" you probably not ready for Flexboxes model in general yet.
+              <br />
+              Also at the moment FGS should contain vendor prefixes <code class="line-sass-class">-ms-</code> for IE10
+              and <code class="line-sass-class">-webkit-</code> for Safari, which increase little bit styles size.
+            </dd>
+            <dt>Why use Flex Box Grid? What alternatives are exist?</dt>
+            <dd>
+              <p>
+                I tried to use <a
+                href="http://foundation.zurb.com/docs/components/grid.html"
+                target="_blank"
+              >Foundation Grid</a> by Zurb, <a href="http://flexboxgrid.com/" target="_blank">Flexbox Grid</a> by
+                Kristofer Joseph, <a
+                href="https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/grid.css"
+                target="_blank"
+              >Solved by Flexbox
+              </a> by Philip Walton and others. All of them not bad, but in my opinion too complicated for first meet,
+                have specific namespaces
+                and have not full features that Flexboxes model provides.
+              </p>
+              <p>
+                Flex Box Grid uses simple object oriented name spacing, provides ease customization via Sass variables
+                and have full list of Flexbox features.
+              </p>
+            </dd>
+          </dl>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</main>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="scripts/prism.js"></script>
+</body>
+</html>
