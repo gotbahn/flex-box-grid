@@ -4,7 +4,7 @@
 
 # ▥ Flex Box Grid
 
-Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes. Short, intuitive solid structure with flexible options system, mixin generators to match any of your needs.
+Responsive, mobile first Flexbox Grid
 
 - [Installation](#installation)
     - [npm](#npm)
@@ -48,7 +48,7 @@ Extract it to Sass working directory
 
 ## <a name="documentation"></a>Demo & Documentation
 
-Demo and most detailed documentation you can find [here](https://flex-box-grid.github.io) "Flex Box Grid Demo & Documentation").
+Demo and most detailed documentation you can find [here](http://godban.github.io/flex-box-grid) "Flex Box Grid Demo & Documentation").
 
 ### <a name="basic"></a>Basic
 

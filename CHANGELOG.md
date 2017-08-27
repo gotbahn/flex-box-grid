@@ -15,7 +15,7 @@ General Cleanup
 - [License](LICENSE) 
 
 ### Changed
-- Documentation and Demo now lives in [https://flex-box-grid.github.io](https://flex-box-grid.github.io)
+- Documentation and Demo now lives in [http://godban.github.io/flex-box-grid](http://godban.github.io/flex-box-grid)
 - **[Breaking changes]** Entries renamed to `index`
 - Build now using npm scripts instead of Grunt.js
 
