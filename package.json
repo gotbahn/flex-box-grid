@@ -4,13 +4,15 @@
     "homepage": "http://godban.github.io"
   },
   "name": "flex-box-grid",
-  "description": "Create clean, simple and powerful multi-device, responsive, mobile first grid layouts via Flexible Boxes",
+  "description": "Responsive, mobile first Flexbox Grid",
   "devDependencies": {
     "autoprefixer": "7.1.2",
     "node-sass": "4.5.3",
-    "postcss-cli": "4.1.0"
+    "postcss-cli": "4.1.0",
+    "stylelint": "8.0.0",
+    "stylelint-config-recommended": "1.0.0"
   },
-  "homepage": "https://flex-box-grid.github.io",
+  "homepage": "http://godban.github.io/flex-box-grid",
   "keywords": [
     "Grid",
     "Flex",
@@ -36,7 +38,8 @@
     "docs": "npm run docs:clean && npm run docs:copy && npm run docs:scss",
     "docs:clean": "rm -rf docs/styles/flex-box-grid docs/dist",
     "docs:copy": "cp -a dist/scss docs/styles/flex-box-grid && cp -a dist docs/dist",
-    "docs:scss": "node-sass docs/styles/index.scss docs/styles/index.css --output-style=compressed"
+    "docs:scss": "node-sass docs/styles/index.scss docs/styles/index.css --output-style=compressed",
+    "test": "stylelint '**/*.scss' --syntax scss"
   },
   "version": "1.0.0"
 }
