@@ -3,11 +3,13 @@
     "name": "Bogdan Plieshka",
     "homepage": "http://godban.github.io"
   },
+  "bugs": {
+    "url": "https://github.com/godban/flex-box-grid/issues"
+  },
   "name": "flex-box-grid",
   "description": "Responsive, mobile first Flexbox Grid",
   "devDependencies": {
     "autoprefixer": "7.1.3",
-    "greenkeeper-lockfile": "1.8.1",
     "node-sass": "4.5.3",
     "postcss-cli": "4.1.0",
     "stylelint": "8.0.0",
