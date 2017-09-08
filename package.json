@@ -11,7 +11,7 @@
   "devDependencies": {
     "autoprefixer": "7.1.4",
     "node-sass": "4.5.3",
-    "postcss-cli": "4.1.0",
+    "postcss-cli": "4.1.1",
     "stylelint": "8.1.1",
     "stylelint-config-recommended": "1.0.0"
   },
