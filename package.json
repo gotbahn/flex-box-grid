@@ -9,7 +9,7 @@
   "name": "flex-box-grid",
   "description": "Responsive, mobile first Flexbox Grid",
   "devDependencies": {
-    "autoprefixer": "7.1.5",
+    "autoprefixer": "7.1.6",
     "node-sass": "4.5.3",
     "postcss-cli": "4.1.1",
     "stylelint": "8.2.0",
