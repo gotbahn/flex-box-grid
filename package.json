@@ -13,7 +13,7 @@
     "node-sass": "4.7.1",
     "postcss-cli": "4.1.1",
     "stylelint": "8.2.0",
-    "stylelint-config-recommended": "1.0.0"
+    "stylelint-config-recommended": "2.0.0"
   },
   "homepage": "http://godban.github.io/flex-box-grid",
   "keywords": [
