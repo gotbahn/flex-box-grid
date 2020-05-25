@@ -12,7 +12,7 @@
     "autoprefixer": "9.4.2",
     "node-sass": "4.9.0",
     "postcss-cli": "4.1.1",
-    "stylelint": "10.0.1",
+    "stylelint": "13.5.0",
     "stylelint-config-recommended": "1.0.0"
   },
   "homepage": "http://godban.github.io/flex-box-grid",
